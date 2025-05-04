@@ -165,7 +165,27 @@
                                                   </div>
                                              </div>
                                         </div>
-                                   </div> 
+                                        <div class="course_tab">
+                                             <div class="tab">
+                                                  <button class="tablinks" onclick="openCity(event, 'Course')" id="defaultOpen"> <img src="assets/images/icon2.png" alt=""> Course</button>
+                                                  <button class="tablinks" onclick="openCity(event, 'Materials')"> <img src="assets/images/icon1.png" alt=""> Materials</button> 
+                                             </div> 
+                                             <div class="tab_content">
+                                                  <div id="Course" class="tabcontent">
+                                                      <p>Welcome to the annual Federal Tax Refresher Course (AFTRC) </p> 
+                                                      <p> Here you will find all the support material in each lesson to be able to present the final exam.</p>
+                                                      <div class="course_content_list">
+                                                            <ul>
+                                                                 <li>100 Questions comprehension Test and Answer Key</li>
+                                                            </ul>
+                                                      </div>
+                                                  </div>
+                                                  <div id="Materials" class="tabcontent">
+                                                      <p>To take the exam you just have to look for it at the end of the lessons.</p> 
+                                                  </div> 
+                                             </div>                                          
+                                        </div>
+                                   </div>  
                               </div>
                          </div>
                          <div class="col-lg-4">
@@ -278,5 +298,25 @@
      <script src="assets/js/jquery.nice-select.min.js" ></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
      <script src="assets/js/scripts.js" ></script>
+     <script>
+          
+	function openCity(evt, cityName) {
+		var i, tabcontent, tablinks;
+		tabcontent = document.getElementsByClassName("tabcontent");
+		for (i = 0; i < tabcontent.length; i++) {
+		  tabcontent[i].style.display = "none";
+		}
+		tablinks = document.getElementsByClassName("tablinks");
+		for (i = 0; i < tablinks.length; i++) {
+		  tablinks[i].className = tablinks[i].className.replace(" tab_active", "");
+		}
+		document.getElementById(cityName).style.display = "block";
+		evt.currentTarget.className += " tab_active";
+	  }
+	  
+	  // Get the element with id="defaultOpen" and click on it
+	  document.getElementById("defaultOpen").click();
+
+     </script>
 </body>
 </html>

@@ -15,61 +15,6 @@ Version      : 1.0
 		$('.preloader').fadeOut(1000);
 	});
 
-	// nice select
-
-	$("#homeTwoCategory").niceSelect()
-	$("#location").niceSelect()
-	$("#category").niceSelect()
-	$(".listing_select").niceSelect()
-
-
-	new Swiper(".review_slider", {
-		slidesPerView: 3,
-		speed: 3000,
-		navigation: {
-		  nextEl: ".swiper-button-next",
-		  prevEl: ".swiper-button-prev",
-		},
-		breakpoints: {
-			1200: {
-				slidesPerView: 1,
-			},
-			1199: {
-				slidesPerView: 1,
-			}, 
-			320: {
-				slidesPerView: 1,
-			}, 
-		},
-	});
-
-
-	new Swiper(".latest_listing", {
-		slidesPerView: 3,
-		spaceBetween: 30,
-		loop: true,
-		speed: 3000,
-		autoplay: {
-			enabled: true,
-			delay: 2000,
-		},
-		pagination: {
-		  el: ".swiper-pagination",
-		  clickable: true,
-		},
-		breakpoints: {
-			1200: {
-				slidesPerView: 3,
-			},
-			1199: {
-				slidesPerView: 2,
-			}, 
-			320: {
-				slidesPerView: 1,
-			}, 
-		},
-	});
-	  
 	  
 	/*END SWIPER JS*/	
 
@@ -131,7 +76,6 @@ Version      : 1.0
 			element.siblings('li').find('ul').slideUp("swing");
 		}
 	});		
-
 
 })(jQuery);
 
