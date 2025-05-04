@@ -1,0 +1,110 @@
+// @@@@@@@@@@@@@ Course section @@@@@@@@@@@@@@@@@
+.course_section {
+    background-color: #F0F0F0;
+    padding: 120px 0px;
+    .course_inner {
+        .course_item {
+            box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.06);
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            .course_image {
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    @include transition($transition);
+                }
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .course-category { 
+                display: inline-block;
+                background: $theme-color;
+                padding: 6px 13px;
+                border-radius: 5px;
+                position: relative;
+                top: -17px;
+                left: 32px;
+                a {
+                    color: #fff;
+                    font-family: $roboto; 
+                    font-size: 13px;
+                    font-weight: 500; 
+                }
+            }
+            .course_body {
+                padding: 0px 30px 20px;
+                .course-title {
+                    font-size: 24px;
+                    color: #333333;
+                    font-weight: 700;
+                    font-family: $roboto; 
+                    padding: 8px 0px 25px;
+                    display: block;
+                    @include breakpoint(max-mobile) {
+                        font-size: 20px;
+                        line-height: 28px;
+                    }
+                    @include transition($transition);
+                    &:hover {
+                        color: $hover-color;
+                    }
+                }
+                .course_footer {
+                    border-top: 1px solid #EAEAEA;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center; 
+                    padding: 30px 0px 15px;
+                    .course_price {
+                        span {
+                            background: #062e92;
+                            color: $white-color;
+                            font-weight: 500;
+                            padding: 4px 12px;
+                            border-radius: 5px;
+                            display: inline-block;
+                            font-family: 'Roboto';
+                        }
+                    }
+                    .course_btn {
+                        a {
+                            color: #333333;     
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            font-family: $roboto;
+                            @include transition($transition);
+                            span {
+                                border-bottom: 2px solid #333333;
+                                padding-bottom: 2px;
+                            }
+                        }
+                        i {
+                            width: 15px;
+                            height: 15px;
+                            border: 1px solid #000;
+                            text-align: center;
+                            line-height: 15px;
+                            font-size: 10px;
+                            border-radius: 100%;
+                            margin-left: 8px;
+                            font-weight: 700;
+                            @include transition($transition);
+                        }
+                        &:hover {
+                            a {
+                                color: $hover-color;
+                            }
+                            i {
+                                border: 1px solid $hover-color;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

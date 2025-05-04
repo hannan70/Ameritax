@@ -1,1 +1,26 @@
- 
+//  @@@@@@@@@@ sub banner @@@@@@@@@@@
+.sub-banner {
+    background-image: url('../../assets/images/subnanner.png');
+    padding: 140px 0px 150px;
+    @include breakpoint(max-lg) {
+        padding: 140px 0px 85px;
+    }
+    .sub-bannner-content {
+        text-align: center;
+        h2 {
+            font-size: $fs-h2;
+            font-family: $roboto;
+            font-weight: 700;
+            @include breakpoint(max-sm){
+                font-size: 30px;
+            }
+        }
+        span {
+            font-weight: 500;
+            font-family: $roboto;
+            a {
+                color: $hover-color;
+            }
+        }
+    }
+}
