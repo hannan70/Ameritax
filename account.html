@@ -135,7 +135,10 @@
                     <div class="my_account_menu_tab">
                          <div class="user_profice">
                               <div class="user_avater">
-                                   <img src="" alt="">
+                                   <label for="file-upload" class="custom-file-upload">
+                                        <img src="assets/images/icon4.png" alt="icon">
+                                   </label>
+                                   <input id="file-upload" type="file" />
                               </div>
                               <div class="user_info">
                                    <span class="user-name">hannanbhuiyan</span>
@@ -147,18 +150,94 @@
                               <button class="my_account_tablinks" onclick="openMenu(event, 'Dashboard')" id="defaultOpen"> <i class="fa-solid fa-gauge"></i> Dashboard</button>
                               <button class="my_account_tablinks" onclick="openMenu(event, 'My_Orders')"> <i class="fa-solid fa-file-invoice"></i> My Orders</button>
                               <button class="my_account_tablinks" onclick="openMenu(event, 'PTIN_Update')"><i class="fa-solid fa-circle-exclamation"></i> PTIN Update</button>
+                              <button class="my_account_tablinks" onclick="openMenu(event, 'Edit_Address')"><i class="fa-solid fa-pen-to-square"></i>Edit Address</button>
+                              <button class="my_account_tablinks" onclick="openMenu(event, 'Payment_Methods')"><i class="fa-solid fa-credit-card"></i></i>Payment Methods</button>
+                              <button class="my_account_tablinks" onclick="openMenu(event, 'Edit_Account')"><i class="fa-solid fa-pen-to-square"></i></i>Edit Account</button>
                          </div>
                          <div class="myaccount_content">
                               <div id="Dashboard" class="my_acconut_tabcontent">
-                                   <h2>Dashboard page</h2>
-                                 </div>
-                                 <div id="My_Orders" class="my_acconut_tabcontent">
+                                   <div class="profile_summery">
+                                        <div class="profile_summey_inner">
+                                             <div class="profile_summery_card">
+                                                  <img src="assets/images/profile.jpg" alt="profile">
+                                                  <br>
+                                                  <a href="#">Edit Profile</a>
+                                             </div>
+                                             <div class="profile_summery_status">
+                                                  <div class="profile_summery_status_list">
+                                                       <ul>
+                                                            <li>
+                                                                 <h5>0</h5>
+                                                                 <span>Courses</span>
+                                                            </li>
+                                                            <li>
+                                                                 <h5>0</h5>
+                                                                 <span>Completed</span>
+                                                            </li>
+                                                            <li>
+                                                                 <h5>0</h5>
+                                                                 <span>Certificates</span>
+                                                            </li>
+                                                            <li>
+                                                                 <h5>0</h5>
+                                                                 <span>Points</span>
+                                                            </li>
+                                                       </ul>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+                                   <div class="purchase_course">
+                                        <div class="purchase_inner">
+                                             <div class="purchase_title">
+                                                  <div class="purchase_left">
+                                                       <h2>Your Courses</h2>
+                                                  </div>
+                                                  <div class="purchase_right">
+                                                       <div class="search_icon">
+                                                            <i class="fa-solid fa-magnifying-glass"></i>
+                                                       </div>
+                                                       <div class="expand_btn">
+                                                            <button>Expand All</button>
+                                                       </div>
+                                                  </div> 
+                                             </div>
+                                             <div class="search_box">
+                                                  <div class="search_box_title">
+                                                       <div class="search_box_title_left">
+                                                            <h3>Search Your Courses</h3>
+                                                       </div>
+                                                       <div class="search_box_right">
+                                                            <button> <i class="fa-solid fa-xmark"></i> Close</button>
+                                                       </div>
+                                                  </div>
+                                                  <div class="form_group">
+                                                       <label for="">Course Name</label>
+                                                       <input type="text">
+                                                       <button class="search_btn">Search</button>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
+
+                              </div>
+                              <div id="My_Orders" class="my_acconut_tabcontent">
                                    <h2>My Orders</h2>
-                                 </div>
-                                 <div id="PTIN_Update" class="my_acconut_tabcontent">
+                              </div>
+                              <div id="PTIN_Update" class="my_acconut_tabcontent">
                                    <h2>PTIN Update</h2>
                               </div>
+                              <div id="Edit_Address" class="my_acconut_tabcontent">
+                                   <h2>Edit Address</h2>
+                              </div>
+                              <div id="Payment_Methods" class="my_acconut_tabcontent">
+                                   <h2>Payment Methods</h2>
+                              </div>
+                              <div id="Edit_Account" class="my_acconut_tabcontent">
+                                   <h2>Edit Account</h2>
+                              </div>
                          </div>
+                         
                     </div>
                </div>
           </div>
@@ -275,10 +354,10 @@
 		}
 		my_account_tablinks = document.getElementsByClassName("my_account_tablinks");
 		for (i = 0; i < my_account_tablinks.length; i++) {
-               my_account_tablinks[i].className = my_account_tablinks[i].className.replace(" tab_active", "");
+               my_account_tablinks[i].className = my_account_tablinks[i].className.replace(" my_account_tab_active", "");
 		}
 		document.getElementById(menu_name).style.display = "block";
-		evt.currentTarget.className += " tab_active";
+		evt.currentTarget.className += " my_account_tab_active";
 	  }
 	  
 	  // Get the element with id="defaultOpen" and click on it

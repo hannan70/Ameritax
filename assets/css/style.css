@@ -901,18 +901,106 @@ p {
   background-color: #FCFCFC;
   padding: 50px 0px 120px;
 }
+.account_section .account_inner .my_account_menu_tab .user_profice {
+  display: flex;
+  flex-wrap: wrap;
+}
+.account_section .account_inner .my_account_menu_tab .user_profice .user_avater {
+  margin-right: 15px;
+}
+.account_section .account_inner .my_account_menu_tab .user_profice .user_avater .custom-file-upload {
+  cursor: pointer;
+}
+.account_section .account_inner .my_account_menu_tab .user_profice .user_avater #file-upload {
+  display: none;
+  visibility: hidden;
+}
+.account_section .account_inner .my_account_menu_tab .user_profice .user_info {
+  margin-bottom: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .user_profice .user_info .user-name,
+.account_section .account_inner .my_account_menu_tab .user_profice .user_info .user-email {
+  width: 100%;
+  display: inline-block;
+}
+.account_section .account_inner .my_account_menu_tab .user_profice .user_info .user-name {
+  font-weight: 600;
+}
+.account_section .account_inner .my_account_menu_tab .user_profice .user_info .user-email {
+  margin-bottom: 4px;
+  font-size: 14px;
+}
+.account_section .account_inner .my_account_menu_tab .user_profice .user_info .user-logout {
+  background-color: #c0c0c0;
+  padding: 2px 10px;
+  border-radius: 2px;
+}
+.account_section .account_inner .my_account_menu_tab .user_profice .user_info .user-logout a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+}
 .account_section .account_inner .my_account_menu_tab .myaccount_menu .my_account_tablinks {
   background-color: #fff;
   border: none;
   box-shadow: 0 0 16px 0 rgba(114, 114, 114, 0.16);
-  padding: 12px 30px;
+  padding: 14px 30px;
   border-radius: 10px;
-  margin-right: 20px;
+  margin: 0px 20px 20px 0px;
   font-weight: 500;
   color: #555;
+  border: 1px solid #eaeaea;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_menu .my_account_tablinks.my_account_tab_active {
+  color: #000;
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_menu .my_account_tablinks i {
   margin-right: 10px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery {
+  margin: 50px 0px 30px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery .profile_summey_inner {
+  text-align: center;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery .profile_summey_inner .profile_summery_card {
+  text-align: center;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery .profile_summey_inner .profile_summery_card img {
+  border: 5px solid rgba(0, 0, 0, 0.08);
+  border-radius: 100%;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery .profile_summey_inner .profile_summery_card a {
+  color: rgba(85, 85, 85, 0.5411764706);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 6px;
+  display: inline-block;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery .profile_summey_inner .profile_summery_status .profile_summery_status_list ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid #e2e7ed;
+  padding: 20px 0px;
+  margin-top: 25px;
+  border-radius: 5px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery .profile_summey_inner .profile_summery_status .profile_summery_status_list ul li {
+  border-right: 1px solid #e2e7ed;
+  padding: 0px 14px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery .profile_summey_inner .profile_summery_status .profile_summery_status_list ul li:last-child {
+  border-right: 0;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery .profile_summey_inner .profile_summery_status .profile_summery_status_list ul li h5 {
+  font-weight: 700;
+  color: #000;
+  font-size: 25px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery .profile_summey_inner .profile_summery_status .profile_summery_status_list ul li span {
+  color: rgba(85, 85, 85, 0.5411764706);
+  font-weight: 600;
 }
 /* =========== Footer Section Start Here  ========= */
 .footer_section {
