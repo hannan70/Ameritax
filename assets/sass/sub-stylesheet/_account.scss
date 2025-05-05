@@ -1,0 +1,47 @@
+// @@@@@@@@@@@ account  css @@@@@@@@@@@@@@@@@
+.account_section {
+    background-color: #FCFCFC;
+    padding: 50px 0px 120px;
+    .account_inner {
+        .my_account_menu_tab {
+            .user_profice {
+                .user_avater {
+
+                }
+                .user_info {
+                    .user-name {
+
+                    }
+                    .user_email {
+
+                    }
+                    .user-logout {
+
+                    }
+
+                }
+            }
+            .myaccount_menu {
+                .my_account_tablinks { 
+                    background-color: #fff;
+                    border: none;
+                    box-shadow: 0 0 16px 0 rgba(114, 114, 114, 0.16);
+                    padding: 12px 30px;
+                    border-radius: 10px;
+                    margin-right: 20px;
+                    font-weight: 500;
+                    color: #555;
+                    i {
+                        margin-right: 10px;
+                    }
+                }
+            }
+            .myaccount_content {
+                .my_acconut_tabcontent {
+
+                }
+            }
+
+        }
+    }
+}
