@@ -116,37 +116,222 @@
                     .purchase_course {
                         .purchase_inner {
                             .purchase_title {
+                                display: flex ;
+                                flex-wrap: wrap;
+                                align-items: center;
+                                justify-content: space-between;
+                                margin-bottom: 40px;
                                 .purchase_left {
                                     h2 {
-
+                                        font-size: 25px;
+                                        font-weight: 700;
                                     }
                                 }
                                 .purchase_right {
+                                    display: flex;
+                                    align-items: center;
+                                    flex-wrap: wrap;
                                     .search_icon {
                                         i {
-
+                                            font-weight: 700;
+                                            font-size: 20px;
+                                            color: #000;
+                                            cursor: pointer;
+                                        }
+                                    }
+                                    .Collapse_btn,
+                                    .expand_btn {
+                                        background: $theme-color;
+                                        color: #fff;
+                                        padding: 15px 30px;
+                                        border: none;
+                                        border-radius: 50px;
+                                        margin-left: 20px;
+                                        font-weight: 600;
+                                        img {
+                                            margin-left: 10px;
+                                            margin-top: -4px;
                                         }
                                     }
                                     .expand_btn {
-                                         
+                                        
+                                    }
+                                    .Collapse_btn {
+                                        display: none;
                                     }
                                 }
                             }
                             .search_box {
+                                background: #e2e7ed;
+                                padding: 30px;
+                                border-radius: 10px; 
+                                display: none; 
+                                &.toggleSearch {
+                                    display: block;
+                                    margin-bottom: 30px; 
+                                }
                                 .search_box_title {
+                                    display: flex;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                    justify-content: space-between;
                                     .search_box_title_left {
                                         h3 {
-
+                                            font-size: 25px;
+                                            font-weight: 700;
                                         }
                                     }
                                     .search_box_right {
-                                        
+                                        .close_btn {
+                                            background: none;
+                                            font-size: 15px;
+                                            font-weight: 500;
+                                            border: 1px solid #fff;
+                                            padding: 7px 12px;
+                                            border-radius: 10px;
+                                        }
                                     }
                                 }
                                 .form_group {
-
+                                    label {
+                                        width: 100%;
+                                        color: #333;
+                                        margin-bottom: 7px;
+                                    }
+                                    input {
+                                        width: calc(100% - 135px);
+                                        padding: 13px;
+                                        border: none;
+                                        outline: none;
+                                        border-radius: 8px;
+                                        margin-right: 20px;
+                                    }
+                                    .search_btn {
+                                        font-size: 14px;
+                                        font-weight: 500;
+                                        border-radius: 50px;
+                                        padding: 15px 32px;
+                                        background: $theme-color;
+                                        color: #fff;
+                                        border: none;
+                                    }
                                 }
                             }
+                        }
+                        .course_purchase_list {
+                            .course_purchase_list_item {
+                                display: flex;
+                                align-items: center;
+                                justify-content: space-between;
+                                border: 2px solid #cdcdcd;
+                                padding: 20px;
+                                border-radius: 10px;
+                                margin-bottom: 30px;
+                                .course_purchase_item_left {
+                                    p {
+                                        color: #33333396;
+                                        font-weight: 600;
+                                        font-size: 18px;
+                                    }
+                                }
+                                .course_purchase_item_right {
+                                    display: flex;
+                                    align-items: center;
+                                    span {
+                                        background-color: $theme-color; 
+                                        color: #fff;
+                                        padding: 4px 17px;
+                                        margin-right: 15px;
+                                        border-radius: 30px;
+                                        font-weight: 600;
+                                        font-size: 13px;
+                                    }
+                                    .arrow_image {
+                                        width: 25px;
+                                        height: 25px;
+                                        background-color: #F20F10;
+                                        text-align: center;
+                                        line-height: 25px;
+                                        border-radius: 100%;
+                                        display: block;
+                                        img {
+
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .alert_not_found {
+                        background-color: #FFF6CD;
+                        padding: 25px;
+                        border-radius: 10px;
+                        border: 2px solid #FFD200;
+                        display: flex;
+                        align-items: center;
+                        .alert_icon {
+                            width: 35px;
+                            height: 35px;
+                            background-color: #FFD200;
+                            display: inline-block;
+                            text-align: center;
+                            line-height: 36px;
+                            border-radius: 100%;
+                            font-size: 28px;
+                            margin-right: 15px;
+                        }
+                        .alert_text {
+                            font-size: 17px;
+                            color: #333;
+                        }
+                    }
+                    .user_dashboard {
+                        margin-top: 40px;
+                        .user_dashboard_sidebar {
+                            .user_dashboard_sidebar_menu {
+                                display: flex;
+                                flex-direction: column;
+                                border-right: 1px solid rgba(0, 0, 0, 0.1);;
+                                .user_dashboard_tablinks {
+                                    text-align: start;  
+                                    padding: 16px;
+                                    border: none;
+                                    background: transparent;
+                                    margin-bottom: 2px;
+                                    @include transition($transition);
+                                    border-left: 4px solid transparent;
+                                    &.user_dashboard_tab_active {
+                                        background: rgba(0, 0, 0, 0.1);
+                                    }
+                                    i {
+                                        margin-right: 8px;
+                                    }
+                                    span {
+                                        width: 100%;
+                                        display: inline-block;
+                                        @include transition($transition);
+                                        color: #555555;
+                                    }
+                                    &:hover {
+                                        background: #EFEFEF; 
+                                        border-left: 4px solid rgb(6, 46, 146);
+                                        
+                                        span {
+                                            transform: translateX(20px);
+                                            width: 100%;
+                                        }
+
+                                    }
+                                    // &:hover {
+                                    //     span {
+                                    //         transform: translateX(20px);
+                                    //     }
+                                    // }
+                                }
+                            }
+                        }
+                        .user_dashboard_content {
+
                         }
                     }
                 }

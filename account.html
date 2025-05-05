@@ -194,11 +194,12 @@
                                                        <h2>Your Courses</h2>
                                                   </div>
                                                   <div class="purchase_right">
-                                                       <div class="search_icon">
+                                                       <div class="search_icon" id="search_icon">
                                                             <i class="fa-solid fa-magnifying-glass"></i>
                                                        </div>
-                                                       <div class="expand_btn">
-                                                            <button>Expand All</button>
+                                                       <div class="expand">
+                                                            <button class="expand_btn">Expand All <img src="assets/images/arrow-down.png" alt="arrow"></button>
+                                                            <button class="Collapse_btn">Collapse All <img src="assets/images/arrow-up.png" alt="arrow"></button>
                                                        </div>
                                                   </div> 
                                              </div>
@@ -208,7 +209,7 @@
                                                             <h3>Search Your Courses</h3>
                                                        </div>
                                                        <div class="search_box_right">
-                                                            <button> <i class="fa-solid fa-xmark"></i> Close</button>
+                                                            <button class="close_btn"> <i class="fa-solid fa-xmark"></i> Close</button>
                                                        </div>
                                                   </div>
                                                   <div class="form_group">
@@ -218,8 +219,67 @@
                                                   </div>
                                              </div>
                                         </div>
+                                        <div class="course_purchase_list">
+                                             <ul>
+                                                  <li class="course_purchase_list_item">
+                                                       <div class="course_purchase_item_left">
+                                                            <p>Annual Federal Tax Refresher Course (AFTRC) – Online 2024</p>
+                                                       </div>
+                                                       <div class="course_purchase_item_right">
+                                                            <span>IN PROGRESS</span>
+                                                            <div class="arrow_image">
+                                                                 <img src="assets/images/arrow-down.png" alt="arrow">
+                                                            </div>
+                                                       </div>
+                                                  </li> 
+                                                  <li class="course_purchase_list_item">
+                                                       <div class="course_purchase_item_left">
+                                                            <p>Annual Federal Tax Refresher Course (AFTRC) – Online 2024</p>
+                                                       </div>
+                                                       <div class="course_purchase_item_right">
+                                                            <span>IN PROGRESS</span>
+                                                            <div class="arrow_image">
+                                                                 <img src="assets/images/arrow-down.png" alt="arrow">
+                                                            </div>
+                                                       </div>
+                                                  </li> 
+                                             </ul>
+                                        </div>
+                                   </div> 
+                                   <div class="alert_not_found">
+                                        <span class="alert_icon"><i class="fa-solid fa-circle-exclamation"></i></span>
+                                        <span class="alert_text">No Courses found</span>
                                    </div>
-
+                                   <div class="user_dashboard">
+                                        <div class="row">
+                                             <div class="col-md-3">
+                                                  <div class="user_dashboard_sidebar">
+                                                       <div class="user_dashboard_sidebar_menu">
+                                                            <button class="user_dashboard_tablinks" onclick="dashboard_menu(event, 'perosnal-details')" id="defaultOpenUserDashboard"><span><i class="fa-solid fa-user"></i> Personal Details</span> </button>
+                                                            <button class="user_dashboard_tablinks" onclick="dashboard_menu(event, 'register')"><span><i class="fa-solid fa-clipboard-check"></i> Registrations</span></button>
+                                                            <button class="user_dashboard_tablinks" onclick="dashboard_menu(event, 'reset-password')"><span><i class="fa-solid fa-unlock"></i> Reset Password</span></button>
+                                                            <a class="user_dashboard_tablinks" href="#"><span><i class="fa-solid fa-right-from-bracket"></i>Logout</span></a>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div class="col-md-9">
+                                                  <div class="user_dashboard_content">
+                                                       <div id="perosnal-details" class="user_dashboard_tabcontent">
+                                                            <h3>Personal Details</h3>
+                                                       </div>
+                                                       
+                                                       <div id="register" class="user_dashboard_tabcontent">
+                                                            <h3>Register</h3>
+                                                       </div>
+                                                       
+                                                       <div id="reset-password" class="user_dashboard_tabcontent">
+                                                            <h3>Reset Password</h3>
+                                                       </div> 
+                                                  </div>
+                                             </div>
+                                        </div> 
+                                        
+                                   </div>
                               </div>
                               <div id="My_Orders" class="my_acconut_tabcontent">
                                    <h2>My Orders</h2>
@@ -362,6 +422,24 @@
 	  
 	  // Get the element with id="defaultOpen" and click on it
 	  document.getElementById("defaultOpen").click();
+
+     //  for user dashboard 
+	function dashboard_menu(evt, user_dashboard_menu) {
+		var i, user_dashboard_tabcontent, user_dashboard_tablinks;
+		user_dashboard_tabcontent = document.getElementsByClassName("user_dashboard_tabcontent");
+		for (i = 0; i < user_dashboard_tabcontent.length; i++) {
+               user_dashboard_tabcontent[i].style.display = "none";
+		}
+		user_dashboard_tablinks = document.getElementsByClassName("user_dashboard_tablinks");
+		for (i = 0; i < user_dashboard_tablinks.length; i++) {
+               user_dashboard_tablinks[i].className = user_dashboard_tablinks[i].className.replace(" user_dashboard_tab_active", "");
+		}
+		document.getElementById(user_dashboard_menu).style.display = "block";
+		evt.currentTarget.className += " user_dashboard_tab_active";
+	  }
+	  
+	  // Get the element with id="defaultOpen" and click on it
+	  document.getElementById("defaultOpenUserDashboard").click();
 
      </script>
 </body>

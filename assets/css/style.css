@@ -226,9 +226,9 @@ p {
   left: 6%;
 }
 .header_section .header_inner .header_btn a {
-  font-size: 13px;
-  padding: 13px 60px 13px 60px;
-  background-color: #F20F10;
+  font-size: 15px;
+  padding: 13px 50px 13px 50px;
+  background-color: #DD3333;
   border-radius: 5px 5px 5px 5px;
   box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.16);
   color: #fff;
@@ -336,7 +336,7 @@ p {
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  color: #F20F10;
+  color: #DD3333;
 }
 .mobile_menu .mobile_menu_bottom .main_mobile_menu > ul li a {
   font-size: 15px;
@@ -372,7 +372,7 @@ p {
   -moz-border-radius: 3px;
   border-radius: 3px;
   color: #fff;
-  background-color: #F20F10;
+  background-color: #DD3333;
 }
 
 .sub-banner {
@@ -429,7 +429,7 @@ p {
 }
 .course_section .course_inner .course_item .course-category {
   display: inline-block;
-  background: #F20F10;
+  background: #DD3333;
   padding: 6px 13px;
   border-radius: 5px;
   position: relative;
@@ -589,7 +589,7 @@ p {
   position: relative;
 }
 .course_details .course_details_inner .course_details_wrapper .course_content .course-info .course_info_item .tooltip_box .custom_tooltip .en_tooltip span {
-  background: #F20F10;
+  background: #DD3333;
   padding: 4px 10px;
   border-radius: 5px;
   color: #fff !important;
@@ -597,7 +597,7 @@ p {
 }
 .course_details .course_details_inner .course_details_wrapper .course_content .course-info .course_info_item .tooltip_box .custom_tooltip .en_tooltip::after {
   position: absolute;
-  background: #F20F10;
+  background: #DD3333;
   width: 10px;
   height: 10px;
   content: "";
@@ -629,7 +629,7 @@ p {
 .course_details .course_details_inner .course_details_wrapper .course_content .course-info .course_info_item .join_btn a {
   padding: 10px 30px;
   color: #fff;
-  background: #F20F10;
+  background: #DD3333;
   border-radius: 26px;
   display: inline-block;
 }
@@ -691,7 +691,7 @@ p {
   content: "";
   width: 150px;
   height: 10px;
-  background-color: #F20F10;
+  background-color: #DD3333;
   bottom: -6px;
   left: 0px;
   border-radius: 6px;
@@ -758,7 +758,7 @@ p {
   position: relative;
 }
 .course_details .course_details_inner .course_details_wrapper .course_content .course_tab .course_module .course_tooltip_box .course_custom_tooltip .course_en_tooltip span {
-  background: #F20F10;
+  background: #DD3333;
   padding: 10px 20px;
   border-radius: 5px;
   color: #fff !important;
@@ -766,7 +766,7 @@ p {
 }
 .course_details .course_details_inner .course_details_wrapper .course_content .course_tab .course_module .course_tooltip_box .course_custom_tooltip .course_en_tooltip::after {
   position: absolute;
-  background: #F20F10;
+  background: #DD3333;
   width: 10px;
   height: 10px;
   content: "";
@@ -1001,6 +1001,196 @@ p {
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery .profile_summey_inner .profile_summery_status .profile_summery_status_list ul li span {
   color: rgba(85, 85, 85, 0.5411764706);
   font-weight: 600;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_left h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_right {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_right .search_icon i {
+  font-weight: 700;
+  font-size: 20px;
+  color: #000;
+  cursor: pointer;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_right .Collapse_btn,
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_right .expand_btn {
+  background: #DD3333;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 50px;
+  margin-left: 20px;
+  font-weight: 600;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_right .Collapse_btn img,
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_right .expand_btn img {
+  margin-left: 10px;
+  margin-top: -4px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_right .Collapse_btn {
+  display: none;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .search_box {
+  background: #e2e7ed;
+  padding: 30px;
+  border-radius: 10px;
+  display: none;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .search_box.toggleSearch {
+  display: block;
+  margin-bottom: 30px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .search_box .search_box_title {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .search_box .search_box_title .search_box_title_left h3 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .search_box .search_box_title .search_box_right .close_btn {
+  background: none;
+  font-size: 15px;
+  font-weight: 500;
+  border: 1px solid #fff;
+  padding: 7px 12px;
+  border-radius: 10px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .search_box .form_group label {
+  width: 100%;
+  color: #333;
+  margin-bottom: 7px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .search_box .form_group input {
+  width: calc(100% - 135px);
+  padding: 13px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .search_box .form_group .search_btn {
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 50px;
+  padding: 15px 32px;
+  background: #DD3333;
+  color: #fff;
+  border: none;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .course_purchase_list_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 2px solid #cdcdcd;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .course_purchase_list_item .course_purchase_item_left p {
+  color: rgba(51, 51, 51, 0.5882352941);
+  font-weight: 600;
+  font-size: 18px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .course_purchase_list_item .course_purchase_item_right {
+  display: flex;
+  align-items: center;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .course_purchase_list_item .course_purchase_item_right span {
+  background-color: #DD3333;
+  color: #fff;
+  padding: 4px 17px;
+  margin-right: 15px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 13px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .course_purchase_list_item .course_purchase_item_right .arrow_image {
+  width: 25px;
+  height: 25px;
+  background-color: #F20F10;
+  text-align: center;
+  line-height: 25px;
+  border-radius: 100%;
+  display: block;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .alert_not_found {
+  background-color: #FFF6CD;
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid #FFD200;
+  display: flex;
+  align-items: center;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .alert_not_found .alert_icon {
+  width: 35px;
+  height: 35px;
+  background-color: #FFD200;
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
+  border-radius: 100%;
+  font-size: 28px;
+  margin-right: 15px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .alert_not_found .alert_text {
+  font-size: 17px;
+  color: #333;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard {
+  margin-top: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_sidebar .user_dashboard_sidebar_menu {
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_sidebar .user_dashboard_sidebar_menu .user_dashboard_tablinks {
+  text-align: start;
+  padding: 16px;
+  border: none;
+  background: transparent;
+  margin-bottom: 2px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-left: 4px solid transparent;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_sidebar .user_dashboard_sidebar_menu .user_dashboard_tablinks.user_dashboard_tab_active {
+  background: rgba(0, 0, 0, 0.1);
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_sidebar .user_dashboard_sidebar_menu .user_dashboard_tablinks i {
+  margin-right: 8px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_sidebar .user_dashboard_sidebar_menu .user_dashboard_tablinks span {
+  width: 100%;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #555555;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_sidebar .user_dashboard_sidebar_menu .user_dashboard_tablinks:hover {
+  background: #EFEFEF;
+  border-left: 4px solid rgb(6, 46, 146);
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_sidebar .user_dashboard_sidebar_menu .user_dashboard_tablinks:hover span {
+  transform: translateX(20px);
+  width: 100%;
 }
 /* =========== Footer Section Start Here  ========= */
 .footer_section {

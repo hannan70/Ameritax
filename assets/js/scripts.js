@@ -77,6 +77,37 @@ Version      : 1.0
 		}
 	});		
 
+	//  my account
+	$("#search_icon i").on("click", function() {
+		$(".search_box").toggleClass("toggleSearch")
+	})
+	$(".close_btn").on("click", function() {
+		$(".search_box").removeClass("toggleSearch")
+	})
+
+	// for expand button toggle
+	$(".expand_btn").on("click", function() {
+		$(".course_purchase_list").css({"display": "none"})
+		$(".expand_btn").css({
+			'display': 'none'
+		})
+		$(".Collapse_btn").css({
+			"display": "block"
+		})
+	})
+	$(".Collapse_btn").on("click", function() {
+		$(".course_purchase_list").css({"display": "block"})
+		$(".expand_btn").css({
+			'display': 'block'
+		})
+		$(".Collapse_btn").css({
+			"display": "none"
+		})
+	})
+
+
+	
+
 })(jQuery);
 
 
