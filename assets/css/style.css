@@ -75,6 +75,41 @@ p {
   padding: 0;
 }
 
+.form-group {
+  margin-bottom: 20px;
+}
+.form-group label, .form-group input {
+  width: 100%;
+}
+.form-group label {
+  margin-bottom: 6px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.form-group .input_area {
+  position: relative;
+}
+.form-group .input_area input {
+  padding: 10px 20px;
+  border: 1px solid #ded7d7;
+  outline: none;
+}
+.form-group .input_area .view_icon {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-11px);
+  cursor: pointer;
+}
+.form-group .input_area .view_icon i {
+  color: #555;
+}
+.form-group .require_star {
+  color: #DD3333;
+  font-size: 17px;
+  padding-left: 2px;
+}
+
 .header_section {
   background-color: #FCFCFC;
   padding: 0px;
@@ -1192,6 +1227,73 @@ p {
   transform: translateX(20px);
   width: 100%;
 }
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section {
+  padding-left: 20px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_avater {
+  margin-right: 30px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_avater img {
+  width: 150px;
+  height: auto;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_submission h2 {
+  font-weight: 700;
+  text-transform: capitalize;
+  margin: 0;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_submission h2 span {
+  color: rgb(6, 46, 146);
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_submission h6 {
+  color: #555;
+  margin: 0;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_info_table .db_user_info_table_item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_info_table .db_user_info_table_item .db_user_table_label {
+  width: 260px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_info_table .db_user_info_table_item .db_user_table_label span {
+  font-weight: 700;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_info_table .db_user_info_table_item .db_user_table_value span {
+  color: #555;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner {
+  text-align: center;
+  margin-top: 20px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner h3 {
+  font-size: 36px;
+  font-weight: 700;
+  margin: 30px 0px 20px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner p {
+  color: #555;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_reset_password .submit_btn {
+  background: #DD3333;
+  color: #fff;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_reset_password .submit_btn:hover {
+  background-color: #000;
+}
+
 /* =========== Footer Section Start Here  ========= */
 .footer_section {
   background-image: url("../../assets/images/footer-bg.png");

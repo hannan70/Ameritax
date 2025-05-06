@@ -331,7 +331,84 @@
                             }
                         }
                         .user_dashboard_content {
+                            .db_user_details_section {
+                                padding-left: 20px;
+                                .db_user_card {
+                                    display: flex;
+                                    align-items: center;
+                                    margin-bottom: 40px;
+                                    .db_user_avater {
+                                        margin-right: 30px;
+                                        img {
+                                            width: 150px;
+                                            height: auto;
+                                        }
+                                    }
+                                    .db_user_submission {
+                                        h2 {
+                                            font-weight: 700;
+                                            text-transform: capitalize;
+                                            margin: 0;
+                                            span {
+                                                color: rgb(6, 46, 146);
+                                            }
+                                        }
+                                        h6 {
+                                            color: #555;
+                                            margin: 0;
+                                        }
+                                    }
+                                }
+                                .db_user_info_table {
+                                    .db_user_info_table_item {
+                                        display: flex;
+                                        align-items: center;
+                                        margin-bottom: 15px;
+                                        .db_user_table_label {
+                                            width: 260px;
+                                            span {
+                                                font-weight: 700;
+                                            }
+                                        }
+                                        .db_user_table_value {
+                                            span {
+                                                color: #555;
+                                            }
+                                        }
+                                    }
 
+                                }
+                            }
+                            .db_user_registration {
+                                .db_user_registeration_inner {
+                                    text-align: center;
+                                    margin-top: 20px;
+                                    img {}
+                                    h3 {
+                                        font-size: $fs-h3;
+                                        font-weight: 700;
+                                        margin: 30px 0px 20px;
+                                    }
+                                    p {
+                                        color: #555;
+                                    }
+                                }
+                            }
+                            .db_reset_password {
+                                .submit_btn {
+                                    background: $theme-color;
+                                    color: $white-color;
+                                    border: none;
+                                    padding: 13px 20px;
+                                    border-radius: 5px;
+                                    @include transition($transition);
+
+    
+                                    &:hover {
+                                        background-color: #000;
+                                    }
+                                }
+                            }
                         }
                     }
                 }

@@ -43,4 +43,39 @@ p {
 	padding: 0;
 }
 
- 
+// input 
+.form-group {
+	margin-bottom: 20px;
+	label, input {
+		width: 100%;
+	}
+	label { 
+		margin-bottom: 6px;
+		font-size: 15px;
+		font-weight: 500
+	}
+	.input_area {
+		position: relative;
+		input {
+			padding: 10px 20px;
+			border: 1px solid #ded7d7;
+			outline: none;
+		}
+		.view_icon {
+			position: absolute; 
+			top: 50%;
+			right: 20px;
+			transform: translateY(-11px);
+			cursor: pointer;
+			i {
+				color: #555;
+			}
+		}
+	}
+	
+	.require_star {
+		color: $theme-color;
+		font-size: 17px;
+		padding-left: 2px;
+	}
+}
