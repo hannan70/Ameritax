@@ -468,7 +468,7 @@
                                                        <span>$0.00 for 2 items</span>
                                                   </div>
                                                   <div class="order_table_item_action">
-                                                       <a href="#">VIEW</a>
+                                                       <a class="my_account_tablinks" onclick="openMenu(event, 'order_details')" href="#">VIEW</a>
                                                   </div>
                                              </div>
                                              <div class="order_table_item">
@@ -485,7 +485,7 @@
                                                        <span>$0.00 for 2 items</span>
                                                   </div>
                                                   <div class="order_table_item_action">
-                                                       <a href="#">VIEW</a>
+                                                       <a class="my_account_tablinks" onclick="openMenu(event, 'order_details')" href="#">VIEW</a>
                                                   </div>
                                              </div>
                                              <div class="order_table_item">
@@ -502,7 +502,24 @@
                                                        <span>$0.00 for 2 items</span>
                                                   </div>
                                                   <div class="order_table_item_action">
-                                                       <a href="#">VIEW</a>
+                                                       <a class="my_account_tablinks" onclick="openMenu(event, 'order_details')" href="#">VIEW</a>
+                                                  </div>
+                                             </div>
+                                             <div class="order_table_item">
+                                                  <div class="order_table_item_order">
+                                                       <span>#34224</span>
+                                                  </div>
+                                                  <div class="order_table_item_date">
+                                                       <span>12/11/2025</span>
+                                                  </div>
+                                                  <div class="order_table_item_status">
+                                                       <span>Completed</span>
+                                                  </div>
+                                                  <div class="order_table_item_total">
+                                                       <span>$0.00 for 2 items</span>
+                                                  </div>
+                                                  <div class="order_table_item_action">
+                                                       <a class="my_account_tablinks" onclick="openMenu(event, 'order_details')" href="#">VIEW</a>
                                                   </div>
                                              </div>
                                         </div>
@@ -567,6 +584,53 @@
                               </div>
                               <div id="Edit_Account" class="my_acconut_tabcontent">
                                    <h2>Edit Account</h2>
+                              </div>
+                              <div id="order_details" class="my_acconut_tabcontent">
+                                   <div class="order_details_section">
+                                        <div class="order_details_para">
+                                             <p>Order <span>#5456</span> was placed on <span>12/11/2025</span> and is currently <span>Completed</span></p>
+                                        </div>
+                                        <div class="order_details_table">
+                                             <h2>Order Details</h2>
+                                             <div class="order_details_table_item order_details_title">
+                                                  <div class="order_details_table_left"><span class="order_details_table_title">Product</span></div>
+                                                  <div class="order_details_table_right"><span class="order_details_table_title">Total</span></div>
+                                             </div>
+                                             <div class="order_details_table_item">
+                                                  <div class="order_details_table_left"><span class="product_name">IRS AFSP Program Exam</span> <strong><i class="fa-solid fa-xmark"></i> 1</strong></div>
+                                                  <div class="order_details_table_right">$49.00</div>
+                                             </div>
+                                             <div class="order_details_table_item">
+                                                  <div class="order_details_table_left"> <span class="product_name">IRS AFSP Program Exam + Classes</span> <strong><i class="fa-solid fa-xmark"></i></strong> 1</div>
+                                                  <div class="order_details_table_right">$89.00</div>
+                                             </div>
+                                             <div class="order_details_table_item">
+                                                  <div class="order_details_table_left"><strong>Subtotal:</strong></div>
+                                                  <div class="order_details_table_right"><strong>$189.00</strong></div>
+                                             </div>
+                                             <div class="order_details_table_item">
+                                                  <div class="order_details_table_left"><strong>Discount:</strong></div>
+                                                  <div class="order_details_table_right"><strong>-$189.00</strong></div>
+                                             </div>
+                                             <div class="order_details_table_item">
+                                                  <div class="order_details_table_left"><strong>Total:</strong></div>
+                                                  <div class="order_details_table_right"><strong>$0.00</strong></div>
+                                             </div>
+                                        </div>
+                                        <div class="order_again">
+                                             <button class="order_again_btn">ORDER AGAIN</button>
+                                        </div>
+                                        <div class="billing_address">
+                                             <div class="billing_address_title">
+                                                  <h2>Billing Address</h2>
+                                             </div>
+                                             <div class="billing_address_item">
+                                                  <span class="billing_name"><i class="fa-solid fa-user"></i> Hannan Bhuiyan</span> <br>
+                                                  <span class="billing_phone"><i class="fa-solid fa-phone"></i> +2548922541</span> <br>
+                                                  <span class="billing_email"><i class="fa-solid fa-envelope"></i> hannan@gmail.com</span>
+                                             </div>
+                                        </div>
+                                   </div>
                               </div>
                          </div>
                          

@@ -444,7 +444,6 @@
                         
                     }
                     .order_table {
-                        
                         .order_table_item {
                             display: flex;
                             align-items: center;
@@ -456,6 +455,10 @@
                             &.order_table_item_title {
                                 background-color: #F7F7F7;
                                 border-top: 1px solid #ddd;
+                                span {
+                                    font-weight: 700;
+                                    color: #555;
+                                }
                             }
                             .order_table_item_order,
                             .order_table_item_date,
@@ -472,6 +475,10 @@
                             .order_table_item_total {
                                 border-right: 1px solid #ddd;
                             }  
+                            .order_table_item_order {
+                                color: #361888;
+                                font-weight: 600;
+                            }
                             .order_table_item_action {
                                 a {
                                     background-color: #0EB582;
@@ -484,6 +491,87 @@
                             }                      
                         }
                     }
+                }
+                .order_details_section {
+                    margin-top: 40px;
+                    .order_details_para {
+                        margin-bottom: 20px;
+                        p {
+                            span {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    .order_details_table {
+                        h2 {
+                            font-size: 30px;
+                            font-weight: 700;
+                            margin-bottom: 12px;
+                        }
+                        .order_details_table_item {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            text-align: center;
+                            border-bottom: 1px solid #ddd;
+                            border-left: 1px solid #ddd;
+                            border-right: 1px solid #ddd;
+                            &.order_details_title {
+                                border-top: 1px solid #ddd;
+                                background-color: #F7F7F7;
+                            }
+                            .order_details_table_title {
+                                font-weight: 700;
+                            }
+                            .order_details_table_left {
+                                width: calc(100% - 150px);
+                                border-right: 1px solid #ddd;
+                                padding: 15px;
+                                .product_name {
+                                    color: #361888;
+                                    font-weight: 500;
+                                }
+                            }
+                            .order_details_table_right {
+                                width: 150px;
+                            }
+                        }
+                    }
+                    .order_again {
+                        .order_again_btn {
+                            background: #0EB582;
+                            color: #fff;
+                            font-weight: 700;
+                            border: none;
+                            padding: 14px 30px;
+                            border-radius: 35px;
+                            margin-top: 20px;
+                        }
+                    }
+                    .billing_address {
+                        margin-top: 30px;
+                        .billing_address_title h2 {
+                            font-size: 30px;
+                            font-weight: 700;
+                            margin: 0;
+                        }
+                        .billing_address_item {
+                            border: 1px solid #ddd;
+                            padding: 20px;
+                            border-radius: 10px;
+                            i {
+                                color: #33333370;
+                                margin-right: 10px;
+                            }
+                        }
+                        .billing_address {
+                            margin-top: 30px;
+                        }
+                        .billing_phone {
+                            margin: 7px 0px;
+                            display: inline-block;
+                        }
+                    }  
                 }
             }
         }

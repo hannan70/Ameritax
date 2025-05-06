@@ -1353,6 +1353,10 @@ p {
   background-color: #F7F7F7;
   border-top: 1px solid #ddd;
 }
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item.order_table_item_title span {
+  font-weight: 700;
+  color: #555;
+}
 .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_order,
 .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_date,
 .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_status,
@@ -1368,6 +1372,10 @@ p {
 .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_total {
   border-right: 1px solid #ddd;
 }
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_order {
+  color: #361888;
+  font-weight: 600;
+}
 .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_action a {
   background-color: #0EB582;
   padding: 10px 22px;
@@ -1375,6 +1383,81 @@ p {
   font-weight: 600;
   border-radius: 30px;
   font-size: 14px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section {
+  margin-top: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .order_details_para {
+  margin-bottom: 20px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .order_details_para p span {
+  font-weight: 700;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .order_details_table h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .order_details_table .order_details_table_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .order_details_table .order_details_table_item.order_details_title {
+  border-top: 1px solid #ddd;
+  background-color: #F7F7F7;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .order_details_table .order_details_table_item .order_details_table_title {
+  font-weight: 700;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .order_details_table .order_details_table_item .order_details_table_left {
+  width: calc(100% - 150px);
+  border-right: 1px solid #ddd;
+  padding: 15px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .order_details_table .order_details_table_item .order_details_table_left .product_name {
+  color: #361888;
+  font-weight: 500;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .order_details_table .order_details_table_item .order_details_table_right {
+  width: 150px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .order_again .order_again_btn {
+  background: #0EB582;
+  color: #fff;
+  font-weight: 700;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 35px;
+  margin-top: 20px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .billing_address {
+  margin-top: 30px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .billing_address .billing_address_title h2 {
+  font-size: 30px;
+  font-weight: 700;
+  margin: 0;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .billing_address .billing_address_item {
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .billing_address .billing_address_item i {
+  color: rgba(51, 51, 51, 0.4392156863);
+  margin-right: 10px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .billing_address .billing_address {
+  margin-top: 30px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_details_section .billing_address .billing_phone {
+  margin: 7px 0px;
+  display: inline-block;
 }
 
 /* =========== Footer Section Start Here  ========= */
