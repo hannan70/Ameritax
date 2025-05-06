@@ -441,8 +441,29 @@
                 .order_section {
                     margin-top: 40px;
                     .order_not_fount {
-                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        background: #F6F5F8;
+                        padding: 18px 25px;
+                        border-top: 4px solid #1E85BE;
+                        a {
+                            background: #0EB582;
+                            color: #fff;
+                            padding: 15px 35px;
+                            border-radius: 30px;
+                            font-weight: 700;
+                            font-size: 15px;
+                            @include transition($transition);
+                            &:hover {
+                                background-color: #000;
+                            }
+                        }
+                        img {
+                            margin-right: 10px;
+                        }
                     }
+                     
                     .order_table {
                         .order_table_item {
                             display: flex;
@@ -487,6 +508,10 @@
                                     font-weight: 600;
                                     border-radius: 30px;
                                     font-size: 14px;
+                                    @include transition($transition);
+                                    &:hover {
+                                        background-color: #000;
+                                    }
                                 }
                             }                      
                         }
@@ -563,15 +588,54 @@
                                 color: #33333370;
                                 margin-right: 10px;
                             }
+                            span {
+                                margin: 7px 0px;
+                                display: inline-block;
+                                width: 100%;
+                            }
                         }
                         .billing_address {
                             margin-top: 30px;
                         }
-                        .billing_phone {
-                            margin: 7px 0px;
-                            display: inline-block;
-                        }
+                         
                     }  
+                }
+
+                .address_section {
+                    .address_section_inner {
+                        margin-top: 40px;
+                        .address_para {
+                            p {
+                                color: #333;
+                            }
+                        }
+                        .address_section_wrapper {
+                            margin-top: 20px;
+                            .address_section_item {
+                                .address_section_item_content {
+                                    .address_section_item_btn {
+                                        text-align: end;
+                                        width: 100%;
+                                        display: inline-block;
+                                        margin: 10px 0px;
+                                        color: #062EAD;
+                                    }
+                                    .address_section_item_summery {
+                                        text-align: center;
+                                        ul {
+                                            li {
+                                                color: #333;
+                                                margin-bottom: 7px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .billing_address_section, .edit_account_section {
+                    margin-top: 40px;
                 }
             }
         }

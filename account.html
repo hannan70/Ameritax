@@ -17,6 +17,7 @@
      <link rel="stylesheet" href="assets/css/all.min.css">
      <link rel="stylesheet" href="assets/css/swiper-bundle.min.css"> 
      <link rel="stylesheet" href="assets/css/nice-select.css"> 
+     <link rel="stylesheet" href="assets/css/select2.min.css"> 
      <link rel="stylesheet" href="assets/css/style.css">
      <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
@@ -434,7 +435,8 @@
                               <div id="My_Orders" class="my_acconut_tabcontent">
                                    <div class="order_section">
                                         <!-- <div class="order_not_fount">
-                                             <p>Order not found</p>
+                                             <p> <img src="assets/images/icon5.png" alt="icon"> No order has been made yet.</p>
+                                             <a href="#">BROWSE PRODUCT</a>
                                         </div> -->
                                         <div class="order_table">
                                              <div class="order_table_item order_table_item_title">
@@ -577,13 +579,120 @@
                                    </div>
                               </div>
                               <div id="Edit_Address" class="my_acconut_tabcontent">
-                                   <h2>Edit Address</h2>
+                                   <div class="address_section">
+                                        <div class="address_section_inner">
+                                             <div class="address_para">
+                                                  <p>The following addresses will be used on the checkout page by default.</p>
+                                             </div>
+                                             <div class="address_section_wrapper">
+                                                  <div class="row">
+                                                       <div class="col-lg-6 col-12">
+                                                            <div class="address_section_item">
+                                                                 <div class="address_section_item_content">
+                                                                      <h2 class="comment_title">Billing address</h2>
+                                                                      <a class="address_section_item_btn my_account_tablinks" href="#" onclick="openMenu(event, 'billing_address')">Add Billing address</a>
+                                                                      <div class="address_section_item_summery">
+                                                                           <ul>
+                                                                                <li>Wladimir Melo</li>
+                                                                                <li>WM</li>
+                                                                                <li>Carrera 12 #16-34, Piso 2 Apto #4</li>
+                                                                                <li>Chia</li>
+                                                                                <li>Cundinamarca</li>
+                                                                                <li>250001</li>
+                                                                                <li>Colombia</li>
+                                                                           </ul>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-lg-6 col-12">
+                                                            <div class="address_section_item">
+                                                                 <div class="address_section_item_content">
+                                                                      <h2 class="comment_title">Shipping address</h2>
+                                                                      <a class="address_section_item_btn my_account_tablinks" href="#" onclick="openMenu(event, 'shipping_address')"  >Add Shipping address</a>
+                                                                      <div class="address_section_item_summery">
+                                                                           <p>You have not set up this type of address yet.</p>
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
                               </div>
                               <div id="Payment_Methods" class="my_acconut_tabcontent">
                                    <h2>Payment Methods</h2>
                               </div>
                               <div id="Edit_Account" class="my_acconut_tabcontent">
-                                   <h2>Edit Account</h2>
+                                   <div class="edit_account_section">
+                                        <form action="">
+                                             <div class="row">
+                                                  <div class="col-md-6">
+                                                       <div class="form-group">
+                                                            <label for="">Full Name<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input type="text" id="first_name" name="first_name"> 
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                       <div class="form-group">
+                                                            <label for="">Last Name<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input type="text" id="last_name" name="last_name"> 
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-12">
+                                                       <div class="form-group">
+                                                            <label for="">Display Name<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input type="text" id="display_name" name="display_name"> 
+                                                                 <p>This will be how your name will be displayed in the account section and in reviews</p>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-12">
+                                                       <div class="form-group">
+                                                            <label for="">Email Address<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input type="text" id="email" value="hannan.diuh@gmail.com" name="email"> 
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-12">
+                                                       <div class="form-group">
+                                                            <label for="">Current password (leave blank to leave unchanged)<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input type="password" id="password6" name="password">
+                                                                 <div class="view_icon" data-target="password6">👁️</div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-12">
+                                                       <div class="form-group">
+                                                            <label for="">New password (leave blank to leave unchanged)<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input type="password" id="password7" name="new_password">
+                                                                 <div class="view_icon" data-target="password7">👁️</div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-12">
+                                                       <div class="form-group">
+                                                            <label for="">Confirm new password<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input type="password" id="password8" name="confirm_passowrd">
+                                                                 <div class="view_icon" data-target="password8">👁️</div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <button class="submit_btn">Save Changes</button>
+                                        </form>
+                                   </div>
                               </div>
                               <div id="order_details" class="my_acconut_tabcontent">
                                    <div class="order_details_section">
@@ -625,15 +734,191 @@
                                                   <h2>Billing Address</h2>
                                              </div>
                                              <div class="billing_address_item">
-                                                  <span class="billing_name"><i class="fa-solid fa-user"></i> Hannan Bhuiyan</span> <br>
-                                                  <span class="billing_phone"><i class="fa-solid fa-phone"></i> +2548922541</span> <br>
-                                                  <span class="billing_email"><i class="fa-solid fa-envelope"></i> hannan@gmail.com</span>
+                                                  <span class="billing_name"><i class="fa-solid fa-user"></i> Hannan Bhuiyan</span>
+                                                  <span class="billing_phone"><i class="fa-solid fa-phone"></i> +2548922541</span>
+                                                  <span class="billing_email"><i class="fa-solid fa-envelope"></i> hannan@gmail.com</span> 
                                              </div>
                                         </div>
                                    </div>
                               </div>
+                              <div id="billing_address" class="my_acconut_tabcontent">
+                                   <div class="billing_address_section">
+                                        <h2 class="comment_title">Billing address</h2>
+                                        <div class="billing_address_section_inner">
+                                             <form action="">
+                                                  <div class="row">
+                                                       <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                 <label for="">Full Name<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="first_name" name="first_name"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                 <label for="">Last Name<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="last_name" name="last_name"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">Email Address<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="email" value="hannan.diuh@gmail.com" name="email"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">Country / Region<span class="require_star">*</span></label>
+                                                                 <select class="region_or_country" name="state">
+                                                                      <option value="AL">Select a Country/Region</option>
+                                                                      <option value="WY">Wyoming</option>
+                                                                      <option value="WY">Bangladesh</option>
+                                                                      <option value="WY">India</option>
+                                                                      <option value="WY">Uk</option>
+                                                                      <option value="WY">Canada</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">Street Address<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="street" placeholder="House number and street name" name="street"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">Town / City<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="city_or_town"  name="city"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">County (optional)</label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="country"  name="country"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">Postcode<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="post_code"  name="postcode"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                 <label for="">City Of Participation<span class="require_star">*</span></label>
+                                                                 <select class="city_of_participation" name="state">
+                                                                      <option value="AL">Select Some Option</option>
+                                                                      <option value="WY">Long Island, NY</option>
+                                                                      <option value="WY">Long Island, NY</option>
+                                                                      <option value="WY">Long Island, NY</option>
+                                                                      <option value="WY">Long Island, NY</option>
+                                                                      <option value="WY">Long Island, NY</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6">
+                                                            <div class="col-12">
+                                                                 <div class="form-group">
+                                                                      <label for="">PTIN <span class="require_star">*</span></label>
+                                                                      <div class="input_area">
+                                                                           <input type="text" id="ptin" placeholder="PTIN No"  name="ptin"> 
+                                                                      </div>
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <button class="submit_btn">Save Address</button>
+                                             </form>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div id="shipping_address" class="my_acconut_tabcontent">
+                                   <div class="billing_address_section">
+                                        <h2 class="comment_title">Shipping Address</h2>
+                                        <div class="billing_address_section_inner">
+                                             <form action="">
+                                                  <div class="row">
+                                                       <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                 <label for="">Full Name<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="first_name" name="first_name"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-md-6">
+                                                            <div class="form-group">
+                                                                 <label for="">Last Name<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="last_name" name="last_name"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">Country / Region<span class="require_star">*</span></label>
+                                                                 <select class="region_or_country" name="state">
+                                                                      <option value="AL">Select a Country/Region</option>
+                                                                      <option value="WY">Wyoming</option>
+                                                                      <option value="WY">Bangladesh</option>
+                                                                      <option value="WY">India</option>
+                                                                      <option value="WY">Uk</option>
+                                                                      <option value="WY">Canada</option>
+                                                                 </select>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">Street Address<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="street" placeholder="House number and street name" name="street"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">Town / City<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="city_or_town"  name="city"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">County (optional)</label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="country"  name="country"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div>
+                                                       <div class="col-12">
+                                                            <div class="form-group">
+                                                                 <label for="">Postcode<span class="require_star">*</span></label>
+                                                                 <div class="input_area">
+                                                                      <input type="text" id="post_code"  name="postcode"> 
+                                                                 </div>
+                                                            </div>
+                                                       </div> 
+                                                  </div>
+                                                  <button class="submit_btn">Save Address</button>
+                                             </form>
+                                        </div>
+                                   </div>
+                              </div>
                          </div>
-                         
                     </div>
                </div>
           </div>
@@ -738,6 +1023,7 @@
      <script src="assets/js/fontawesome.min.js" ></script>
      <script src="assets/js/swiper-bundle.min.js" ></script>
      <script src="assets/js/jquery.nice-select.min.js" ></script>
+     <script src="assets/js/select2.min.js" ></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
      <script src="assets/js/scripts.js" ></script>
      <script>

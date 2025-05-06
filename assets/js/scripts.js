@@ -15,6 +15,10 @@ Version      : 1.0
 		$('.preloader').fadeOut(1000);
 	});
 
+	$(document).ready(function() {
+		$('.region_or_country').select2();
+		$('.city_of_participation').select2();
+	});
 	  
 	/*END SWIPER JS*/	
 
