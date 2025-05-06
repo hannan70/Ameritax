@@ -83,7 +83,7 @@
                     <nav class="primary_menu">
                          <ul class="d-flex justify-content-between align-items-center">
                               <li class="active">
-                                   <a href="#0">HOME</a>
+                                   <a href="index.html">HOME</a>
                               </li>  
                               <li>
                                    <a href="#0">Take Exam<i class="fa-solid fa-chevron-down"></i></a>
@@ -94,13 +94,15 @@
                                         </ul>
                                    </div>
                               </li> 
-                              <li><a href="">Account</a></li> 
+                              <li><a href="account.html">Account</a></li> 
                               <li> <a href="contact.html">CONTACT</a> </li>
                          </ul> 
                          <div class="header_btn">
                               <div class="cart_icon">
-                                   <i class="fa-solid fa-cart-shopping"></i>
-                                   <span>0</span>
+                                   <a href="#">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                        <span>0</span>
+                                   </a>
                               </div>
                               <div class="search-btn">
                                    <div class="search_icon">
@@ -108,7 +110,7 @@
                                    </div>
                                    <input type="text" placeholder="Search...">
                               </div>
-                              <a href="#"><i class="fa-solid fa-user"></i> Login/Register</a>
+                              <a class="login_reg_btn" href="#"><i class="fa-solid fa-user"></i> Login/Register</a>
                          </div>
                     </nav>   
                    
@@ -271,7 +273,7 @@
                                                                            <img src="assets/images/profile.jpg" alt="image">
                                                                       </div>
                                                                       <div class="db_user_submission">
-                                                                           <h2><span>Welcome,</span>hannanbhuiyan</h2>
+                                                                           <h2><span>Welcome, </span>hannanbhuiyan</h2>
                                                                            <h6>0 Inbox</h6>
                                                                       </div>
                                                                  </div>
@@ -333,7 +335,64 @@
                                                                  <div class="db_user_registeration_inner">
                                                                       <img src="assets/images/register-icon.png" alt="image">
                                                                       <h3>Registrations</h3>
-                                                                      <p>You have not submitted any forms yet.</p>
+                                                                      <!-- <p>You have not submitted any forms yet.</p> -->
+                                                                      <div class="db_user_registration_list">
+                                                                           <div class="db_user_registration_list_item form_title">
+                                                                                <div class="reg_list_no">
+                                                                                     <span>Sr.</span>
+                                                                                </div>
+                                                                                <div class="reg_list_form">
+                                                                                     <span>Form</span>
+                                                                                </div>
+                                                                                <div class="reg_list_date">
+                                                                                     <span>Date</span>
+                                                                                </div>
+                                                                           </div>
+                                                                           <div class="db_user_registration_list_item">
+                                                                                <div class="reg_list_no">
+                                                                                     <span>1</span>
+                                                                                </div>
+                                                                                <div class="reg_list_form">
+                                                                                     <a href="#">PTIN Form Update</a>
+                                                                                </div>
+                                                                                <div class="reg_list_date">
+                                                                                     <span>12/1/2025</span>
+                                                                                </div>
+                                                                           </div>
+                                                                           <div class="db_user_registration_list_item">
+                                                                                <div class="reg_list_no">
+                                                                                     <span>2</span>
+                                                                                </div>
+                                                                                <div class="reg_list_form">
+                                                                                     <a href="#">PTIN Form Update</a>
+                                                                                </div>
+                                                                                <div class="reg_list_date">
+                                                                                     <span>12/1/2025</span>
+                                                                                </div>
+                                                                           </div>
+                                                                           <div class="db_user_registration_list_item">
+                                                                                <div class="reg_list_no">
+                                                                                     <span>3</span>
+                                                                                </div>
+                                                                                <div class="reg_list_form">
+                                                                                     <a href="#">Registration From Details</a>
+                                                                                </div>
+                                                                                <div class="reg_list_date">
+                                                                                     <span>12/1/2025</span>
+                                                                                </div> 
+                                                                           </div>
+                                                                           <div class="db_user_registration_list_item">
+                                                                                <div class="reg_list_no">
+                                                                                     <span>4</span>
+                                                                                </div>
+                                                                                <div class="reg_list_form">
+                                                                                     <a href="#">Registration From Details</a>
+                                                                                </div>
+                                                                                <div class="reg_list_date">
+                                                                                     <span>12/1/2025</span>
+                                                                                </div> 
+                                                                           </div>
+                                                                      </div>
                                                                  </div>
                                                             </div>
                                                        </div>
@@ -373,10 +432,132 @@
                                    </div>
                               </div>
                               <div id="My_Orders" class="my_acconut_tabcontent">
-                                   <h2>My Orders</h2>
+                                   <div class="order_section">
+                                        <!-- <div class="order_not_fount">
+                                             <p>Order not found</p>
+                                        </div> -->
+                                        <div class="order_table">
+                                             <div class="order_table_item order_table_item_title">
+                                                  <div class="order_table_item_order">
+                                                       <span>ORDER</span>
+                                                  </div>
+                                                  <div class="order_table_item_date">
+                                                       <span>DATE</span>
+                                                  </div>
+                                                  <div class="order_table_item_status">
+                                                       <span>STATUS</span>
+                                                  </div>
+                                                  <div class="order_table_item_total">
+                                                       <span>TOTAL</span>
+                                                  </div>
+                                                  <div class="order_table_item_action">
+                                                       <span>Action</span>
+                                                  </div>
+                                             </div>
+                                             <div class="order_table_item">
+                                                  <div class="order_table_item_order">
+                                                       <span>#34224</span>
+                                                  </div>
+                                                  <div class="order_table_item_date">
+                                                       <span>12/11/2025</span>
+                                                  </div>
+                                                  <div class="order_table_item_status">
+                                                       <span>Completed</span>
+                                                  </div>
+                                                  <div class="order_table_item_total">
+                                                       <span>$0.00 for 2 items</span>
+                                                  </div>
+                                                  <div class="order_table_item_action">
+                                                       <a href="#">VIEW</a>
+                                                  </div>
+                                             </div>
+                                             <div class="order_table_item">
+                                                  <div class="order_table_item_order">
+                                                       <span>#34224</span>
+                                                  </div>
+                                                  <div class="order_table_item_date">
+                                                       <span>12/11/2025</span>
+                                                  </div>
+                                                  <div class="order_table_item_status">
+                                                       <span>Completed</span>
+                                                  </div>
+                                                  <div class="order_table_item_total">
+                                                       <span>$0.00 for 2 items</span>
+                                                  </div>
+                                                  <div class="order_table_item_action">
+                                                       <a href="#">VIEW</a>
+                                                  </div>
+                                             </div>
+                                             <div class="order_table_item">
+                                                  <div class="order_table_item_order">
+                                                       <span>#34224</span>
+                                                  </div>
+                                                  <div class="order_table_item_date">
+                                                       <span>12/11/2025</span>
+                                                  </div>
+                                                  <div class="order_table_item_status">
+                                                       <span>Completed</span>
+                                                  </div>
+                                                  <div class="order_table_item_total">
+                                                       <span>$0.00 for 2 items</span>
+                                                  </div>
+                                                  <div class="order_table_item_action">
+                                                       <a href="#">VIEW</a>
+                                                  </div>
+                                             </div>
+                                        </div>
+                                   </div>
                               </div>
                               <div id="PTIN_Update" class="my_acconut_tabcontent">
-                                   <h2>PTIN Update</h2>
+                                   <div class="pint_update_section">
+                                        <form action="">
+                                             <div class="form-group">
+                                                  <label for="">PTIN<span class="require_star">*</span></label>
+                                                  <div class="input_area">
+                                                       <input type="text" id="pint" name="pint_no"> 
+                                                  </div>
+                                             </div>
+                                             <div class="row">
+                                                  <div class="col-md-6">
+                                                       <div class="form-group">
+                                                            <label for="">Username<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input type="text" id="username" name="username"> 
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                       <div class="form-group">
+                                                            <label for="">Email<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input disabled type="text" id="email" name="email" value="hannan@gmail.com"> 
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                       <div class="form-group">
+                                                            <label for="">Password<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input type="password" id="password4" name="password">
+                                                                 <div class="view_icon" data-target="password4">👁️</div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <div class="col-md-6">
+                                                       <div class="form-group">
+                                                            <label for="">Enter password again *<span class="require_star">*</span></label>
+                                                            <div class="input_area">
+                                                                 <input type="password" id="password5" name="repeat_password">
+                                                                 <div class="view_icon" data-target="password5">👁️</div>
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                             </div>
+                                             <div class="submit_button">
+                                                  <button type="submit" class="submit_btn">Update Data</button>
+                                             </div>
+                                        </form>
+                                   </div>
                               </div>
                               <div id="Edit_Address" class="my_acconut_tabcontent">
                                    <h2>Edit Address</h2>

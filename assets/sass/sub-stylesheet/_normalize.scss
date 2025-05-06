@@ -79,3 +79,15 @@ p {
 		padding-left: 2px;
 	}
 }
+
+.submit_btn {
+	background: $theme-color;
+	color: $white-color;
+	border: none;
+	padding: 13px 20px;
+	border-radius: 5px;
+	@include transition($transition);
+	&:hover {
+		background-color: #000;
+	}
+}

@@ -110,6 +110,9 @@
             .cart_icon {
                 position: relative;
                 margin: 0px 25px 0px ;
+                a {
+                    color: #555;
+                }
                 span {
                     position: absolute;
                     top: -9px;
@@ -147,7 +150,7 @@
                     left: 6%;
                 }
             }
-            a {
+            .login_reg_btn {
                 font-size: 15px;
                 padding: 13px 50px 13px 50px;
                 background-color: $theme-color;

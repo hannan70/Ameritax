@@ -322,11 +322,6 @@
                                         }
 
                                     }
-                                    // &:hover {
-                                    //     span {
-                                    //         transform: translateX(20px);
-                                    //     }
-                                    // }
                                 }
                             }
                         }
@@ -392,23 +387,101 @@
                                     p {
                                         color: #555;
                                     }
-                                }
-                            }
-                            .db_reset_password {
-                                .submit_btn {
-                                    background: $theme-color;
-                                    color: $white-color;
-                                    border: none;
-                                    padding: 13px 20px;
-                                    border-radius: 5px;
-                                    @include transition($transition);
-
-    
-                                    &:hover {
-                                        background-color: #000;
+                                    .db_user_registration_list {
+                                        .db_user_registration_list_item {
+                                            display: flex;
+                                            align-self: center;
+                                            justify-content: space-between;
+                                            padding: 15px 23px;
+                                            border-left: 1px solid #ddd;
+                                            border-bottom: 1px solid #ddd;
+                                            border-right: 1px solid #ddd;
+                                            @include transition($transition);
+                                            &.form_title {
+                                                background-color: #E1E1E1;
+                                                 
+                                            }
+                                            &:hover {
+                                                background-color: #EFEFEF;
+                                            }
+                                            .reg_list_no {
+                                                font-weight: 500;
+                                                width: 40px;
+                                            }
+                                            .reg_list_form {
+                                                a {
+                                                    color: #062E92;
+                                                    font-weight: 500;
+                                                } 
+                                                span {
+                                                    font-weight: 500;
+                                                }
+                                            }
+                                            .reg_list_date {
+                                                font-weight: 500;
+                                                width: 100px;
+                                            }
+                                        }
                                     }
                                 }
                             }
+                            .db_reset_password {
+                                
+                            }
+                        }
+                    }
+                }
+                .pint_update_section {
+                    margin-top: 40px;
+                    .submit_button {
+                        text-align: center;
+                        margin-top: 20px;
+                    }
+                }
+                .order_section {
+                    margin-top: 40px;
+                    .order_not_fount {
+                        
+                    }
+                    .order_table {
+                        
+                        .order_table_item {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            text-align: center;
+                            border-bottom: 1px solid #ddd;
+                            border-left: 1px solid #ddd;
+                            border-right: 1px solid #ddd;
+                            &.order_table_item_title {
+                                background-color: #F7F7F7;
+                                border-top: 1px solid #ddd;
+                            }
+                            .order_table_item_order,
+                            .order_table_item_date,
+                            .order_table_item_status, 
+                            .order_table_item_total, 
+                            .order_table_item_action {
+                                width: calc(100% / 5);
+                                padding: 15px;
+                            } 
+                            .order_table_item_order,
+                            .order_table_item_date,
+                            .order_table_item_date,
+                            .order_table_item_status, 
+                            .order_table_item_total {
+                                border-right: 1px solid #ddd;
+                            }  
+                            .order_table_item_action {
+                                a {
+                                    background-color: #0EB582;
+                                    padding: 10px 22px;
+                                    color: #fff;
+                                    font-weight: 600;
+                                    border-radius: 30px;
+                                    font-size: 14px;
+                                }
+                            }                      
                         }
                     }
                 }

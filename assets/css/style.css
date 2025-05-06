@@ -110,6 +110,20 @@ p {
   padding-left: 2px;
 }
 
+.submit_btn {
+  background: #DD3333;
+  color: #fff;
+  border: none;
+  padding: 13px 20px;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.submit_btn:hover {
+  background-color: #000;
+}
+
 .header_section {
   background-color: #FCFCFC;
   padding: 0px;
@@ -222,6 +236,9 @@ p {
   position: relative;
   margin: 0px 25px 0px;
 }
+.header_section .header_inner .header_btn .cart_icon a {
+  color: #555;
+}
 .header_section .header_inner .header_btn .cart_icon span {
   position: absolute;
   top: -9px;
@@ -260,7 +277,7 @@ p {
   top: 28%;
   left: 6%;
 }
-.header_section .header_inner .header_btn a {
+.header_section .header_inner .header_btn .login_reg_btn {
   font-size: 15px;
   padding: 13px 50px 13px 50px;
   background-color: #DD3333;
@@ -269,11 +286,11 @@ p {
   color: #fff;
 }
 @media (max-width: 1199px) {
-  .header_section .header_inner .header_btn a {
+  .header_section .header_inner .header_btn .login_reg_btn {
     padding: 13px 30px 13px 30px;
   }
 }
-.header_section .header_inner .header_btn a i {
+.header_section .header_inner .header_btn .login_reg_btn i {
   margin-right: 5px;
 }
 
@@ -1280,18 +1297,84 @@ p {
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner p {
   color: #555;
 }
-.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_reset_password .submit_btn {
-  background: #DD3333;
-  color: #fff;
-  border: none;
-  padding: 13px 20px;
-  border-radius: 5px;
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner .db_user_registration_list .db_user_registration_list_item {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  padding: 15px 23px;
+  border-left: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_reset_password .submit_btn:hover {
-  background-color: #000;
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner .db_user_registration_list .db_user_registration_list_item.form_title {
+  background-color: #E1E1E1;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner .db_user_registration_list .db_user_registration_list_item:hover {
+  background-color: #EFEFEF;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner .db_user_registration_list .db_user_registration_list_item .reg_list_no {
+  font-weight: 500;
+  width: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner .db_user_registration_list .db_user_registration_list_item .reg_list_form a {
+  color: #062E92;
+  font-weight: 500;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner .db_user_registration_list .db_user_registration_list_item .reg_list_form span {
+  font-weight: 500;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner .db_user_registration_list .db_user_registration_list_item .reg_list_date {
+  font-weight: 500;
+  width: 100px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .pint_update_section {
+  margin-top: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .pint_update_section .submit_button {
+  text-align: center;
+  margin-top: 20px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section {
+  margin-top: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item.order_table_item_title {
+  background-color: #F7F7F7;
+  border-top: 1px solid #ddd;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_order,
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_date,
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_status,
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_total,
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_action {
+  width: 20%;
+  padding: 15px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_order,
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_date,
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_date,
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_status,
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_total {
+  border-right: 1px solid #ddd;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item .order_table_item_action a {
+  background-color: #0EB582;
+  padding: 10px 22px;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 30px;
+  font-size: 14px;
 }
 
 /* =========== Footer Section Start Here  ========= */
