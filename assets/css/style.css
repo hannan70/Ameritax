@@ -161,6 +161,17 @@ span.select2-selection {
   border-radius: 3px;
 }
 
+.coupun_btn {
+  background-color: #0EB582;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 37px;
+  border: none;
+  outline: none;
+  border-radius: 30px;
+  font-size: 15px;
+}
+
 .header_section {
   background-color: #FCFCFC;
   padding: 0px;
@@ -607,11 +618,45 @@ span.select2-selection {
 .faq_section {
   margin: 120px 0px;
 }
+.faq_section .faq_area .faq_left .faq_left_title {
+  max-width: 410px;
+}
+.faq_section .faq_area .faq_left .faq_left_title h2 {
+  line-height: 40px;
+}
+@media (max-width: 575px) {
+  .faq_section .faq_area .faq_left .faq_left_title h2 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+}
+.faq_section .faq_area .faq_left .faq_left_title p {
+  margin: 20px 0px 70px;
+}
+.faq_section .faq_area .faq_left .faq_left_title h5 {
+  color: #555;
+}
+@media (max-width: 1199px) {
+  .faq_section .faq_area .faq_left img {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-width: 991px) {
+  .faq_section .faq_area .faq_right {
+    margin-top: 30px;
+  }
+}
 .faq_section .faq_area .faq_right .faq_accordion button.accordion-button {
   font-size: 22px;
   font-weight: 700;
   line-height: 42px;
   color: #333333;
+}
+@media (max-width: 575px) {
+  .faq_section .faq_area .faq_right .faq_accordion button.accordion-button {
+    font-size: 16px;
+  }
 }
 .faq_section .faq_area .faq_right .faq_accordion .accordion-button:not(.collapsed) {
   background-color: #0E13A8;
@@ -641,6 +686,23 @@ span.select2-selection {
   line-height: 26px;
   font-weight: 400;
   color: #555;
+}
+
+.privacy_section {
+  margin: 70px 0px 100px;
+}
+.privacy_section .privace_area .privacy_content .privacy_title {
+  font-weight: 700;
+  font-size: 20px;
+}
+.privacy_section .privace_area .privacy_content p {
+  line-height: 30px;
+}
+.privacy_section .privace_area .privacy_content ul {
+  margin-left: 17px;
+}
+.privacy_section .privace_area .privacy_content ul li {
+  list-style: disc;
 }
 
 .course_details {
@@ -1592,6 +1654,22 @@ span.select2-selection {
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .billing_address_section, .account_section .account_inner .my_account_menu_tab .myaccount_content .edit_account_section {
   margin-top: 40px;
+}
+
+.cart_section .cart_area .cart_table .cart_table_inner .cart_table_bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.cart_section .cart_area .cart_table .cart_table_inner .cart_table_bottom .coupun input {
+  border: 1px solid #ddd;
+  padding: 7px;
+  border-radius: 5px;
+  margin-right: 20px;
+}
+.cart_section .cart_area .cart_table .cart_table_inner .cart_table_bottom .update_cart a {
+  color: #fff;
 }
 
 /* =========== Footer Section Start Here  ========= */
