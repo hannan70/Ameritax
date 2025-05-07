@@ -135,4 +135,12 @@ span.select2-selection {
     outline: none;
     border-radius: 30px;
 	font-size: 15px;
+	@include transition($transition);
+	&:hover {
+		background-color: #000;
+	}
+	@include breakpoint(max-sm){
+		display: inline-block !important;
+		width: 100% !important;
+	}
 }

@@ -170,6 +170,18 @@ span.select2-selection {
   outline: none;
   border-radius: 30px;
   font-size: 15px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.coupun_btn:hover {
+  background-color: #000;
+}
+@media (max-width: 575px) {
+  .coupun_btn {
+    display: inline-block !important;
+    width: 100% !important;
+  }
 }
 
 .header_section {
@@ -204,7 +216,7 @@ span.select2-selection {
 }
 @media (max-width: 1199px) {
   .header_section .header_inner .primary_menu ul li:not(.sub_menu li) {
-    margin: 10px 11px;
+    margin: 10px;
   }
 }
 .header_section .header_inner .primary_menu ul li:not(.sub_menu li)::after {
@@ -1659,6 +1671,11 @@ span.select2-selection {
 .cart_section {
   margin: 40px 0px 80px;
 }
+@media (max-width: 767px) {
+  .cart_section .cart-container {
+    max-width: 720px !important;
+  }
+}
 .cart_section .cart_area .cart_alert .cart_alert_inner {
   display: flex;
   justify-content: space-between;
@@ -1668,9 +1685,19 @@ span.select2-selection {
   border-top: 2px solid #DD3333;
   margin-bottom: 40px;
 }
+@media (max-width: 575px) {
+  .cart_section .cart_area .cart_alert .cart_alert_inner {
+    flex-wrap: wrap;
+  }
+}
 .cart_section .cart_area .cart_alert .cart_alert_inner .cart_alert_left {
   width: calc(100% - 150px);
   display: flex;
+}
+@media (max-width: 575px) {
+  .cart_section .cart_area .cart_alert .cart_alert_inner .cart_alert_left {
+    width: 100%;
+  }
 }
 .cart_section .cart_area .cart_alert .cart_alert_inner .cart_alert_left i {
   color: #DD3333;
@@ -1689,17 +1716,39 @@ span.select2-selection {
   font-size: 14px;
   border-radius: 30px;
 }
+@media (max-width: 575px) {
+  .cart_section .cart_area .cart_alert .cart_alert_inner .cart_alert_right .cart_view_btn {
+    margin: 10px 0px 10px 30px;
+  }
+}
 .cart_section .cart_area .cart_table .cart_table_inner .cart_table_bottom {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
+@media (max-width: 575px) {
+  .cart_section .cart_area .cart_table .cart_table_inner .cart_table_bottom .coupun {
+    width: 100%;
+  }
+}
 .cart_section .cart_area .cart_table .cart_table_inner .cart_table_bottom .coupun input {
   border: 1px solid #ddd;
-  padding: 7px;
+  padding: 7px 10px;
   border-radius: 5px;
   margin-right: 20px;
+}
+@media (max-width: 575px) {
+  .cart_section .cart_area .cart_table .cart_table_inner .cart_table_bottom .coupun input {
+    margin: 20px 0px;
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .cart_section .cart_area .cart_table .cart_table_inner .cart_table_bottom .update_cart {
+    margin: 20px 0px;
+    width: 100%;
+  }
 }
 .cart_section .cart_area .cart_table .cart_table_inner .cart_table_bottom .update_cart a {
   color: #fff;
@@ -1708,6 +1757,100 @@ span.select2-selection {
   color: #DD3333;
   cursor: pointer;
   font-weight: 700;
+  padding-top: 11px;
+}
+.cart_section .cart_area .cart_table .cart_table_inner table tr td .cart_table_product {
+  color: #3478F6;
+  font-weight: 500;
+  padding-top: 6px;
+  display: block;
+}
+.cart_section .cart_area .cart_table .cart_table_inner table tr td img {
+  width: 40px;
+  height: auto;
+}
+.cart_section .cart_area .cart_table .cart_table_inner table tr td.cart_price, .cart_section .cart_area .cart_table .cart_table_inner table tr td.c_qty, .cart_section .cart_area .cart_table .cart_table_inner table tr td.c_subtotal {
+  padding-top: 14px;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box {
+  margin-top: 30px;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .cart_summery_title h4 {
+  font-size: 25px;
+  font-weight: 700;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .cart_summery {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .cart_summery .cart_summery_item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .cart_summery .cart_summery_item:last-child {
+  border-bottom: none;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .process_btn {
+  background-color: #0EB582;
+  width: 100%;
+  border: none;
+  color: #fff;
+  padding: 14px;
+  font-weight: 600;
+  font-size: 15px;
+  border-radius: 5px;
+  margin: 20px 0px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .process_btn:hover {
+  background-color: #000;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method .paypal {
+  background-color: #FFC439;
+  padding: 14px 88px;
+}
+@media (max-width: 991px) {
+  .cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method .paypal {
+    margin-bottom: 20px;
+  }
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method .venmo {
+  background-color: #008CFF;
+  padding: 14px 80px;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method img {
+  height: 28px;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method .paypal, .cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method .venmo {
+  text-align: center;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method .paypal:hover, .cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method .venmo:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 991px) {
+  .cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method .paypal, .cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method .venmo {
+    width: 100%;
+  }
+}
+.cart_section .cart_area .cart_total_summery .cart_total_summery_box .payment_method .payment_btn {
+  border: none;
+  background: transparent;
 }
 
 /* =========== Footer Section Start Here  ========= */

@@ -133,7 +133,7 @@
 
      <!-- cart section start here -->
      <div class="cart_section">
-          <div class="container">
+          <div class="container cart-container">
                <div class="cart_area">
                     <div class="cart_alert">
                          <div class="cart_alert_inner">
@@ -166,25 +166,33 @@
                                           <tr> 
                                             <td><i class="fa-solid fa-xmark"></i></td>
                                             <td><img src="assets/images/cart-image.png" alt="image"></td>
-                                            <td>IRS AFSP Program Exam + Classes</td>
-                                            <td>$89.00</td>
-                                            <td>1</td>
-                                            <td>$89.00</td>
+                                            <td><a class="cart_table_product" href="#">IRS AFSP Program Exam + Classes</a></td>
+                                            <td class="cart_price">$89.00</td>
+                                            <td class="c_qty">1</td>
+                                            <td class="c_subtotal">$89.00</td>
                                           </tr> 
                                           <tr> 
                                              <td><i class="fa-solid fa-xmark"></i></td>
                                              <td><img src="assets/images/cart-image.png" alt="image"></td>
-                                             <td>IRS AFSP Program Exam</td>
-                                             <td>$49.00</td>
-                                             <td>1</td>
-                                             <td>$49.00</td>
+                                             <td><a class="cart_table_product" href="#">IRS AFSP Program Exam</a></td>
+                                             <td class="cart_price">$49.00</td>
+                                             <td class="c_qty">1</td>
+                                             <td class="c_subtotal">$49.00</td>
+                                           </tr> 
+                                           <tr> 
+                                             <td><i class="fa-solid fa-xmark"></i></td>
+                                             <td><img src="assets/images/cart-image.png" alt="image"></td>
+                                             <td><a class="cart_table_product" href="#">IRS AFSP Program Exam</a></td>
+                                             <td class="cart_price">$49.00</td>
+                                             <td class="c_qty">1</td>
+                                             <td class="c_subtotal">$49.00</td>
                                            </tr> 
                                            <tr>
                                              <td colspan="6">
                                                   <div class="cart_table_bottom">
                                                        <div class="coupun">
                                                             <form action="">
-                                                                 <input type="text">
+                                                                 <input type="text" placeholder="Coupun Code">
                                                                  <button class="coupun_btn">APPLY COUPON</button>
                                                             </form>
                                                        </div>
@@ -196,6 +204,36 @@
                                            </tr>
                                         </tbody>
                                    </table>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="cart_total_summery">
+                         <div class="row justify-content-end">
+                              <div class="col-md-5">
+                                   <div class="cart_total_summery_box">
+                                        <div class="cart_summery_title">
+                                             <h4>Cart Totals</h4>
+                                        </div>
+                                        <div class="cart_summery">
+                                             <div class="cart_summery_item">
+                                                  <strong>Subtotal</strong>
+                                                  <span>$90.00</span>
+                                             </div>
+                                             <div class="cart_summery_item">
+                                                  <strong>Total</strong>
+                                                  <span>$90.00</span>
+                                             </div>
+                                        </div>
+                                        <button class="process_btn">PROCESS TO CHECKOUT</button>
+                                        <div class="payment_method">
+                                             <div class="paypal">
+                                                  <button  class="payment_btn" type="submit"><img src="assets/images/paypal.png" alt="paypal-image"></button>
+                                             </div>
+                                             <div class="venmo">
+                                                  <button class="payment_btn"  type="submit"><img src="assets/images/venmo.png" alt="venmo-image"></button>
+                                             </div>
+                                        </div>
+                                   </div>
                               </div>
                          </div>
                     </div>

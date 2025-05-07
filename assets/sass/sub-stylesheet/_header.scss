@@ -28,7 +28,7 @@
                     position: relative;
                     margin: 10px 20px;
                     @include breakpoint(max-xl) {
-                        margin: 10px 11px;
+                        margin: 10px;
                     }
                     &::after {
                         position: absolute; 

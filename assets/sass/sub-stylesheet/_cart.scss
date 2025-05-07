@@ -1,6 +1,11 @@
 // cart css
 .cart_section {
     margin: 40px 0px 80px;
+    .cart-container {
+        @include breakpoint(max-md) {
+            max-width: 720px !important;
+        }
+    }
     .cart_area {
         .cart_alert {
             .cart_alert_inner {
@@ -11,9 +16,15 @@
                 padding: 15px 25px;
                 border-top: 2px solid $theme-color;
                 margin-bottom: 40px;
+                @include breakpoint(max-sm){
+                    flex-wrap: wrap;
+                }
                 .cart_alert_left {
                     width: calc(100% - 150px);
                     display: flex;
+                    @include breakpoint(max-sm){
+                        width: 100%;
+                    }
                     i {
                         color: $theme-color; 
                         margin: 4px 10px 0px;
@@ -32,6 +43,9 @@
                         display: inline-block;
                         font-size: 14px;
                         border-radius: 30px;
+                        @include breakpoint(max-sm){
+                            margin: 10px 0px 10px 30px;
+                        }
                     }
                 }
             }
@@ -44,14 +58,26 @@
                     align-items: center;
                     justify-content: space-between;
                     .coupun {
+                        @include breakpoint(max-sm){
+                            width: 100%;
+                        }
                         input {
                             border: 1px solid #ddd;
-                            padding: 7px;
+                            padding: 7px 10px;
                             border-radius: 5px;
                             margin-right: 20px;
+                            @include breakpoint(max-sm){
+                                margin: 20px 0px;
+                                width: 100%;
+                            }
                         }
                     }
                     .update_cart {
+                        @include breakpoint(max-sm){
+                            margin: 20px 0px;
+                            width: 100%;
+                        }
+                        
                         a {
                             color: #fff;
                         }
@@ -64,8 +90,100 @@
                                 color: $theme-color;
                                 cursor: pointer;
                                 font-weight: 700;
+                                padding-top: 11px;
+                            }
+                            .cart_table_product {
+                                color: $hover-color; 
+                                font-weight: 500;
+                                padding-top: 6px;
+                                display: block;
+                            }
+                            img {
+                                width: 40px;
+                                height: auto;
+                            }
+                            &.cart_price, &.c_qty, &.c_subtotal {
+                                padding-top: 14px;
                             }
                         }
+                    }
+                }
+            }
+        }
+        .cart_total_summery {
+            .cart_total_summery_box {
+                margin-top: 30px;
+                .cart_summery_title {
+                    h4 {
+                        font-size: 25px;
+                        font-weight: 700;
+                    }
+                }
+                .cart_summery {
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    .cart_summery_item {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-around;
+                        padding: 10px;
+                        border-bottom: 1px solid #ddd;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                    }
+                }
+                .process_btn {
+                    background-color: $button_color;
+                    width: 100%;
+                    border: none;
+                    color: #fff;
+                    padding: 14px;
+                    font-weight: 600;
+                    font-size: 15px;
+                    border-radius: 5px;
+                    margin: 20px 0px;
+                    @include transition($transition);
+                    &:hover {
+                        background-color: #000;
+                    }
+                }
+                .payment_method {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    align-items: center;
+                    .paypal {
+                        background-color: #FFC439;
+                        padding: 14px 88px;
+                        @include breakpoint(max-lg) {
+                            margin-bottom: 20px;
+                        }
+                    }
+                    .venmo {
+                        background-color: #008CFF;
+                        padding: 14px 80px; 
+                    }
+                    img {
+                        height: 28px;
+                    }
+                    .paypal, .venmo { 
+                        // width: calc(50% - 10px);
+                        text-align: center; 
+                        border-radius: 5px;
+                        @include transition($transition);
+                        cursor: pointer;
+                        &:hover {
+                            transform: scale(1.1);
+                        }
+                        @include breakpoint(max-lg) {
+                            width: 100%;
+                        }
+                    }
+                    .payment_btn { 
+                        border: none;
+                        // padding: 14px 70px;
+                        background: transparent;
                     }
                 }
             }
