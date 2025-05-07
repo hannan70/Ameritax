@@ -209,3 +209,85 @@
         }
     }
 }
+
+// contact css
+.contact_section {
+    background-color: #FCFCFC;
+    padding: 120px 0px;
+    .contact_area {
+        .contact_header {
+            padding: 0px 150px;
+            .contact_left {
+                border-right: 1px solid #ddd;
+                padding-right: 110px;
+                h6 {
+                    font-size: 17px;
+                    font-weight: 400;
+                    color: #777777;
+                    margin: 0;
+                }
+                h2 {
+                    font-size: 36px;
+                    font-weight: 700;
+                }
+            }
+            .contact_right {
+                p {
+                    max-width: 360px;
+                }
+            }
+        }
+        .contact_inner {
+            margin-top: 80px;
+            .contact_item {
+                background-color: #fff;
+                box-shadow: 0px 15px 45px 0px rgba(51, 51, 51, 0.08);
+                display: flex;
+                padding: 30px;
+                border: 1px dashed #ddd;
+                border-radius: 5px;
+                height: 160px;
+                .contact_item_icon {
+                    width: 55px;
+                    height: 55px;
+                    border: 5px solid #EBF1F7;
+                    border-radius: 100%;
+                    line-height: 50px;
+                    text-align: center;
+                    margin-right: 15px;
+                    i {
+                        font-size: 22px;
+                    }
+                    i.fa-solid.fa-building {
+                       color: #0ACC86;
+                    }
+                    i.fa-solid.fa-envelope {
+                        color: #004FE1;
+                    }
+                    i.fa-solid.fa-phone {
+                        color: #F5B016;
+                    }
+                }
+               
+                .contact_item_text {
+                    width: calc(100% - 63px);
+                    p {
+                        font-size: 17px;
+                        color: #555;
+                        margin-bottom: 6px;
+                    }
+                    h4 {
+                        font-size: 20px;
+                        line-height: 28px;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}
+
+ 
+
+ 
+ 
