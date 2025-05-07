@@ -604,6 +604,45 @@ span.select2-selection {
   border: 1px solid #3478F6;
 }
 
+.faq_section {
+  margin: 120px 0px;
+}
+.faq_section .faq_area .faq_right .faq_accordion button.accordion-button {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 42px;
+  color: #333333;
+}
+.faq_section .faq_area .faq_right .faq_accordion .accordion-button:not(.collapsed) {
+  background-color: #0E13A8;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.125);
+  color: #fff !important;
+  border-radius: 5px;
+}
+.faq_section .faq_area .faq_right .faq_accordion .accordion-item {
+  background-color: #fff;
+  border: none !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125) !important;
+}
+.faq_section .faq_area .faq_right .faq_accordion .accordion-button:focus {
+  z-index: 3;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+.faq_section .faq_area .faq_right .faq_accordion .accordion-button::after {
+  background-image: url("../../assets/images/arrow-down.png");
+}
+.faq_section .faq_area .faq_right .faq_accordion button.accordion-button.collapsed::after {
+  background-image: url("../../assets/images/black-down-arrow.png");
+}
+.faq_section .faq_area .faq_right .faq_accordion .accordion-body p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #555;
+}
+
 .course_details {
   background-color: rgba(240, 240, 240, 0.3803921569);
   padding: 120px 0px;
