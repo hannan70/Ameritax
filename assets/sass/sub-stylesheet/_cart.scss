@@ -1,8 +1,40 @@
 // cart css
 .cart_section {
+    margin: 40px 0px 80px;
     .cart_area {
         .cart_alert {
-
+            .cart_alert_inner {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #F6F5F8;
+                padding: 15px 25px;
+                border-top: 2px solid $theme-color;
+                margin-bottom: 40px;
+                .cart_alert_left {
+                    width: calc(100% - 150px);
+                    display: flex;
+                    i {
+                        color: $theme-color; 
+                        margin: 4px 10px 0px;
+                    }
+                    p {
+                        color: #555;
+                        font-size: 15px;
+                    }
+                }
+                .cart_alert_right {
+                    .cart_view_btn {
+                        background-color: $button_color;
+                        color: #fff;
+                        font-weight: 600;
+                        padding: 8px 15px;
+                        display: inline-block;
+                        font-size: 14px;
+                        border-radius: 30px;
+                    }
+                }
+            }
         }
         .cart_table {
             .cart_table_inner {
@@ -22,6 +54,17 @@
                     .update_cart {
                         a {
                             color: #fff;
+                        }
+                    }
+                }
+                table {
+                    tr {
+                        td {
+                            i {
+                                color: $theme-color;
+                                cursor: pointer;
+                                font-weight: 700;
+                            }
                         }
                     }
                 }
