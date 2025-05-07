@@ -144,3 +144,26 @@ span.select2-selection {
 		width: 100% !important;
 	}
 }
+
+// payment method button
+.add_payment_btn {
+	background-color: $button-color; 
+	padding: 12px 30px;
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: 600;
+	border-radius: 30px;
+	display: inline-block;
+	font-size: 15px;
+	margin-top: 30px;
+	border: none;
+	outline: none;
+	@include transition($transition);
+	&:hover {
+		background-color: #000;
+		color: #fff;
+	}
+}
+.strip_payment {
+	background-color: #062E92;
+}

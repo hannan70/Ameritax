@@ -217,9 +217,27 @@
     .contact_area {
         .contact_header {
             padding: 0px 150px;
+            @include breakpoint(max-xl) {
+                justify-content: center !important;
+                padding: 0px;
+            }
+            @include breakpoint(max-md) {
+                flex-wrap: wrap;
+                text-align: center;
+            }
             .contact_left {
                 border-right: 1px solid #ddd;
-                padding-right: 110px;
+                padding-right: 100px;
+                @include breakpoint(max-xl) {
+                    padding-right: 50px;
+                }
+                @include breakpoint(max-lg) {
+                    padding-right: 30px;
+                }
+                @include breakpoint(max-md) {
+                    border: none;
+                    padding: 0;
+                }
                 h6 {
                     font-size: 17px;
                     font-weight: 400;
@@ -227,11 +245,21 @@
                     margin: 0;
                 }
                 h2 {
-                    font-size: 36px;
+                    font-size: 28px;
                     font-weight: 700;
                 }
             }
             .contact_right {
+                padding-left: 100px;
+                @include breakpoint(max-xl) {
+                    padding-left: 50px;
+                }
+                @include breakpoint(max-lg) {
+                    padding-left: 30px;
+                }
+                @include breakpoint(max-md) {
+                    padding: 0;
+                }
                 p {
                     max-width: 360px;
                 }
@@ -280,8 +308,15 @@
                         font-size: 20px;
                         line-height: 28px;
                         font-weight: 600;
+                        @include breakpoint(max-lg) {
+                            font-size: 17px;
+                            line-height: 24px;
+                        }
                     }
                 }
+            }
+            .contact_form {
+                margin-top: 50px;
             }
         }
     }

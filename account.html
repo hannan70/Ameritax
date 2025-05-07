@@ -623,7 +623,12 @@
                                    </div>
                               </div>
                               <div id="Payment_Methods" class="my_acconut_tabcontent">
-                                   <h2>Payment Methods</h2>
+                                   <div class="payment_method_section">
+                                        <div class="payment_method_alert">
+                                             <p> <img src="assets/images/not-found.png" alt="image"> No saved methods found.</p>
+                                        </div>
+                                        <a class="my_account_tablinks add_payment_btn" onclick="openMenu(event, 'add_payment_method')" href="#">Add payment method</a>
+                                   </div>
                               </div>
                               <div id="Edit_Account" class="my_acconut_tabcontent">
                                    <div class="edit_account_section">
@@ -914,6 +919,26 @@
                                                        </div> 
                                                   </div>
                                                   <button class="submit_btn">Save Address</button>
+                                             </form>
+                                        </div>
+                                   </div>
+                              </div>
+                              <div id="add_payment_method" class="my_acconut_tabcontent">
+                                   <div class="payment_method_strip">
+                                        <div class="payment_method_strip_box">
+                                             <form action="">
+                                                  <div class="strip_method_title">
+                                                       <input type="radio" checked> <span>Credit Card (Stripe)</span> <img src="assets/images/payment_method.png" alt="image">
+                                                  </div>
+                                                  <div class="strip_method_input">
+                                                       <div class="form-group">
+                                                            <label for="">Pay with your credit card via Stripe</label>
+                                                            <div class="input_area">
+                                                                 <input type="text" id="pint" name="pint_no"> 
+                                                            </div>
+                                                       </div>
+                                                  </div>
+                                                  <button type="submit" class="add_payment_btn strip_payment">Add payment method</a>
                                              </form>
                                         </div>
                                    </div>

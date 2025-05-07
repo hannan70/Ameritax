@@ -637,6 +637,51 @@
                 .billing_address_section, .edit_account_section {
                     margin-top: 40px;
                 }
+                .payment_method_section {
+                    margin-top: 40px;
+                    .payment_method_alert {
+                        background-color: #F6F5F8;
+                        padding: 20px;
+                        border-top: 3px solid #1E85BE;
+                        p {
+                            color: #555; 
+                        }
+                        img { 
+                            margin: -4px 7px 0px 0px;
+                        }
+                    }
+                }
+                .payment_method_strip {
+                    margin-top: 40px;
+                    .payment_method_strip_box {
+                        background: #F8F8F8;
+                        padding: 17px;
+                        .strip_method_title span {
+                            padding-left: 11px;
+                            color: #555;
+                        }
+                        .strip_method_input {
+                            background: #DCD7E3;
+                            padding: 14px;
+                            margin-top: 25px;
+                            position: relative;
+                            label {
+                                color: #555;
+                                font-weight: 400;
+                            }
+                            &::after {
+                                position: absolute;
+                                top: -8px;
+                                left: 28px;
+                                width: 20px;
+                                height: 20px;
+                                content: "";
+                                background-color: #DCD7E3;
+                                transform: rotate(45deg);
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -184,6 +184,31 @@ span.select2-selection {
   }
 }
 
+.add_payment_btn {
+  background-color: #0EB582;
+  padding: 12px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  border-radius: 30px;
+  display: inline-block;
+  font-size: 15px;
+  margin-top: 30px;
+  border: none;
+  outline: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.add_payment_btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.strip_payment {
+  background-color: #062E92;
+}
+
 .header_section {
   background-color: #FCFCFC;
   padding: 0px;
@@ -493,7 +518,7 @@ span.select2-selection {
 }
 @media (max-width: 991px) {
   .sub-banner {
-    padding: 140px 0px 85px;
+    padding: 150px 0px 85px;
   }
 }
 .sub-banner .sub-bannner-content {
@@ -724,9 +749,37 @@ span.select2-selection {
 .contact_section .contact_area .contact_header {
   padding: 0px 150px;
 }
+@media (max-width: 1199px) {
+  .contact_section .contact_area .contact_header {
+    justify-content: center !important;
+    padding: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .contact_section .contact_area .contact_header {
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
 .contact_section .contact_area .contact_header .contact_left {
   border-right: 1px solid #ddd;
-  padding-right: 110px;
+  padding-right: 100px;
+}
+@media (max-width: 1199px) {
+  .contact_section .contact_area .contact_header .contact_left {
+    padding-right: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .contact_section .contact_area .contact_header .contact_left {
+    padding-right: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .contact_section .contact_area .contact_header .contact_left {
+    border: none;
+    padding: 0;
+  }
 }
 .contact_section .contact_area .contact_header .contact_left h6 {
   font-size: 17px;
@@ -735,8 +788,26 @@ span.select2-selection {
   margin: 0;
 }
 .contact_section .contact_area .contact_header .contact_left h2 {
-  font-size: 36px;
+  font-size: 28px;
   font-weight: 700;
+}
+.contact_section .contact_area .contact_header .contact_right {
+  padding-left: 100px;
+}
+@media (max-width: 1199px) {
+  .contact_section .contact_area .contact_header .contact_right {
+    padding-left: 50px;
+  }
+}
+@media (max-width: 991px) {
+  .contact_section .contact_area .contact_header .contact_right {
+    padding-left: 30px;
+  }
+}
+@media (max-width: 767px) {
+  .contact_section .contact_area .contact_header .contact_right {
+    padding: 0;
+  }
 }
 .contact_section .contact_area .contact_header .contact_right p {
   max-width: 360px;
@@ -786,6 +857,15 @@ span.select2-selection {
   font-size: 20px;
   line-height: 28px;
   font-weight: 600;
+}
+@media (max-width: 991px) {
+  .contact_section .contact_area .contact_inner .contact_item .contact_item_text h4 {
+    font-size: 17px;
+    line-height: 24px;
+  }
+}
+.contact_section .contact_area .contact_inner .contact_form {
+  margin-top: 50px;
 }
 
 .course_details {
@@ -1737,6 +1817,51 @@ span.select2-selection {
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .billing_address_section, .account_section .account_inner .my_account_menu_tab .myaccount_content .edit_account_section {
   margin-top: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .payment_method_section {
+  margin-top: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .payment_method_section .payment_method_alert {
+  background-color: #F6F5F8;
+  padding: 20px;
+  border-top: 3px solid #1E85BE;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .payment_method_section .payment_method_alert p {
+  color: #555;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .payment_method_section .payment_method_alert img {
+  margin: -4px 7px 0px 0px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .payment_method_strip {
+  margin-top: 40px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .payment_method_strip .payment_method_strip_box {
+  background: #F8F8F8;
+  padding: 17px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .payment_method_strip .payment_method_strip_box .strip_method_title span {
+  padding-left: 11px;
+  color: #555;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .payment_method_strip .payment_method_strip_box .strip_method_input {
+  background: #DCD7E3;
+  padding: 14px;
+  margin-top: 25px;
+  position: relative;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .payment_method_strip .payment_method_strip_box .strip_method_input label {
+  color: #555;
+  font-weight: 400;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .payment_method_strip .payment_method_strip_box .strip_method_input::after {
+  position: absolute;
+  top: -8px;
+  left: 28px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: #DCD7E3;
+  transform: rotate(45deg);
 }
 
 .cart_section {
