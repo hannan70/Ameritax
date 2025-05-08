@@ -124,6 +124,20 @@ Version      : 1.0
 		}
 	  });
 	  
+	// Select all collapsible elements inside your accordion
+	const collapses = document.querySelectorAll('.accordion-collapse');
+
+	collapses.forEach(collapseEl => {
+		const headerEl = collapseEl.previousElementSibling; // This assumes .course_purchase_list_item is just before .accordion-collapse
+	
+		collapseEl.addEventListener('show.bs.collapse', () => {
+			headerEl.classList.add('db_acc_active');
+		});
+	
+		collapseEl.addEventListener('hide.bs.collapse', () => {
+			headerEl.classList.remove('db_acc_active');
+		});
+	});
 	
 
 })(jQuery);

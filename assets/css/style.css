@@ -1365,6 +1365,7 @@ span.select2-selection {
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_left h2 {
   font-size: 25px;
   font-weight: 700;
+  margin: 0;
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_right {
   display: flex;
@@ -1445,25 +1446,46 @@ span.select2-selection {
   color: #fff;
   border: none;
 }
-.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .course_purchase_list_item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border: 2px solid #cdcdcd;
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item {
   padding: 20px;
   border-radius: 10px;
-  margin-bottom: 30px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .course_purchase_list_item .course_purchase_item_left p {
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_progress .progress {
+  height: 7px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_progress .progress .progress-bar {
+  background-color: #3219C0;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_progress .progress_complete {
+  color: #3478F6;
+  font-weight: 600;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_progress p {
+  color: #333;
+  padding: 10px 0px;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item.db_acc_active .arrow_image {
+  transform: rotate(180deg);
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_purchase_item_left p {
   color: rgba(51, 51, 51, 0.5882352941);
   font-weight: 600;
   font-size: 18px;
 }
-.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .course_purchase_list_item .course_purchase_item_right {
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_purchase_item_right {
   display: flex;
   align-items: center;
 }
-.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .course_purchase_list_item .course_purchase_item_right span {
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_purchase_item_right span {
   background-color: #DD3333;
   color: #fff;
   padding: 4px 17px;
@@ -1472,7 +1494,7 @@ span.select2-selection {
   font-weight: 600;
   font-size: 13px;
 }
-.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .course_purchase_list_item .course_purchase_item_right .arrow_image {
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_purchase_item_right .arrow_image {
   width: 25px;
   height: 25px;
   background-color: #F20F10;
@@ -1480,6 +1502,53 @@ span.select2-selection {
   line-height: 25px;
   border-radius: 100%;
   display: block;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .db_course_table .db_course_table_header {
+  background-color: #DD3333;
+  color: #fff;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .db_course_table .db_course_title {
+  color: #333;
+  font-weight: 400;
+  font-size: 15px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .db_course_table .db_course_title:hover {
+  color: #3478F6;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .db_course_table .db_course_title img {
+  margin-right: 10px;
+  width: 24px;
+  height: auto;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .db_course_table .statistics_icon {
+  color: rgba(51, 51, 51, 0.5803921569);
+  font-size: 19px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .db_course_table .statistics_icon:hover {
+  color: #3478F6;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .db_course_table .db_course_table_time {
+  font-size: 15px;
+  font-weight: 400;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .db_course_table .table {
+  border-right: 1px solid #ddd;
+  border-left: 1px solid #ddd;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .db_course_table .table tr th {
+  padding: 22px 20px !important;
+}
+.account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .db_course_table .table tr td {
+  padding: 16px 20px !important;
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .alert_not_found {
   background-color: #FFF6CD;
@@ -1505,7 +1574,7 @@ span.select2-selection {
   color: #333;
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard {
-  margin-top: 40px;
+  margin-top: 50px;
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_sidebar .user_dashboard_sidebar_menu {
   display: flex;
