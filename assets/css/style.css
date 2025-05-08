@@ -128,6 +128,11 @@ p {
   font-size: 36px;
   font-weight: 700;
 }
+@media (max-width: 575px) {
+  .comment_title {
+    font-size: 24px;
+  }
+}
 
 span.select2.select2-container {
   width: 100% !important;
@@ -1254,6 +1259,11 @@ span.select2-selection {
   background-color: #FCFCFC;
   padding: 50px 0px 120px;
 }
+@media (max-width: 991px) {
+  .account_section .account-container {
+    max-width: 930px;
+  }
+}
 .account_section .account_inner .my_account_menu_tab .user_profice {
   display: flex;
   flex-wrap: wrap;
@@ -1309,6 +1319,11 @@ span.select2-selection {
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_menu .my_account_tablinks i {
   margin-right: 10px;
+}
+@media (max-width: 575px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_menu .my_account_tablinks {
+    width: 100%;
+  }
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .profile_summery {
   margin: 50px 0px 30px;
@@ -1371,6 +1386,11 @@ span.select2-selection {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+}
+@media (max-width: 375px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_right {
+    margin-top: 20px;
+  }
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .purchase_title .purchase_right .search_icon i {
   font-weight: 700;
@@ -1481,9 +1501,19 @@ span.select2-selection {
   font-weight: 600;
   font-size: 18px;
 }
+@media (max-width: 767px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_purchase_item_left p {
+    font-size: 16px;
+  }
+}
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_purchase_item_right {
   display: flex;
   align-items: center;
+}
+@media (max-width: 575px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_purchase_item_right {
+    margin: 10px 0px;
+  }
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .course_purchase_list .accordion-item .course_purchase_list_item .course_purchase_item_right span {
   background-color: #DD3333;
@@ -1614,6 +1644,11 @@ span.select2-selection {
   transform: translateX(20px);
   width: 100%;
 }
+@media (max-width: 991px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content {
+    margin-top: 40px;
+  }
+}
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section {
   padding-left: 20px;
 }
@@ -1622,6 +1657,11 @@ span.select2-selection {
   align-items: center;
   margin-bottom: 40px;
 }
+@media (max-width: 575px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card {
+    flex-wrap: wrap;
+  }
+}
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_avater {
   margin-right: 30px;
 }
@@ -1629,10 +1669,25 @@ span.select2-selection {
   width: 150px;
   height: auto;
 }
+@media (max-width: 575px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_submission {
+    margin-top: 20px;
+  }
+}
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_submission h2 {
   font-weight: 700;
   text-transform: capitalize;
   margin: 0;
+}
+@media (max-width: 991px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_submission h2 {
+    font-size: 36px;
+  }
+}
+@media (max-width: 575px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_submission h2 {
+    font-size: 26px;
+  }
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_details_section .db_user_card .db_user_submission h2 span {
   color: rgb(6, 46, 146);
@@ -1710,6 +1765,11 @@ span.select2-selection {
 .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section {
   margin-top: 40px;
 }
+@media (max-width: 767px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section {
+    overflow-x: scroll;
+  }
+}
 .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_not_fount {
   display: flex;
   align-items: center;
@@ -1734,6 +1794,11 @@ span.select2-selection {
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_not_fount img {
   margin-right: 10px;
+}
+@media (max-width: 767px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table {
+    width: 780px;
+  }
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .order_section .order_table .order_table_item {
   display: flex;

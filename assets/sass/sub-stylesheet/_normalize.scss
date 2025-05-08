@@ -95,6 +95,9 @@ p {
 .comment_title {
 	font-size: 36px;
 	font-weight: 700;
+	@include breakpoint(max-sm) {
+		font-size: 24px;
+	}
 }
 
 // select 2

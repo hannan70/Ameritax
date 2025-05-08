@@ -2,6 +2,11 @@
 .account_section {
     background-color: #FCFCFC;
     padding: 50px 0px 120px;
+    .account-container {
+        @include breakpoint(max-lg){
+            max-width: 930px;
+        }
+    }
     .account_inner {
         .my_account_menu_tab {
             .user_profice {
@@ -59,6 +64,9 @@
                     }
                     i {
                         margin-right: 10px;
+                    }
+                    @include breakpoint(max-sm) {
+                        width: 100%;
                     }
                 }
             }
@@ -132,6 +140,9 @@
                                     display: flex;
                                     align-items: center;
                                     flex-wrap: wrap;
+                                    @include breakpoint(max-mobile) {
+                                        margin-top: 20px;
+                                    }
                                     .search_icon {
                                         i {
                                             font-weight: 700;
@@ -256,11 +267,17 @@
                                             color: #33333396;
                                             font-weight: 600;
                                             font-size: 18px;
+                                            @include breakpoint(max-md){
+                                                font-size: 16px;
+                                            }
                                         }
                                     }
                                     .course_purchase_item_right {
                                         display: flex;
                                         align-items: center;
+                                        @include breakpoint(max-sm){
+                                            margin: 10px 0px;
+                                        }
                                         span {
                                             background-color: $theme-color; 
                                             color: #fff;
@@ -402,12 +419,18 @@
                             }
                         }
                         .user_dashboard_content {
+                            @include breakpoint(max-lg) {
+                                margin-top: 40px;
+                            }
                             .db_user_details_section {
                                 padding-left: 20px;
                                 .db_user_card {
                                     display: flex;
                                     align-items: center;
                                     margin-bottom: 40px;
+                                    @include breakpoint(max-sm) {
+                                        flex-wrap: wrap;
+                                    }
                                     .db_user_avater {
                                         margin-right: 30px;
                                         img {
@@ -416,10 +439,19 @@
                                         }
                                     }
                                     .db_user_submission {
+                                        @include breakpoint(max-sm) {
+                                            margin-top: 20px;
+                                        }
                                         h2 {
                                             font-weight: 700;
                                             text-transform: capitalize;
                                             margin: 0;
+                                            @include breakpoint(max-lg) {
+                                                font-size: 36px;
+                                            }
+                                            @include breakpoint(max-sm) {
+                                                font-size: 26px;
+                                            }
                                             span {
                                                 color: rgb(6, 46, 146);
                                             }
@@ -516,6 +548,9 @@
                 }
                 .order_section {
                     margin-top: 40px;
+                    @include breakpoint(max-md){
+                        overflow-x: scroll;
+                    }
                     .order_not_fount {
                         display: flex;
                         align-items: center;
@@ -541,6 +576,9 @@
                     }
                      
                     .order_table {
+                        @include breakpoint(max-md) {
+                            width: 780px;
+                        }
                         .order_table_item {
                             display: flex;
                             align-items: center;
