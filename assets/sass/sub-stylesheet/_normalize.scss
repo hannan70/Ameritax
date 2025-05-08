@@ -170,3 +170,25 @@ span.select2-selection {
 .strip_payment {
 	background-color: #062E92;
 }
+
+// cart icon
+.cart_icon {
+	position: relative;
+	margin: 0px 25px 0px ;
+	a {
+		color: #555;
+	}
+	span {
+		position: absolute;
+		top: -9px;
+		left: 7px;
+		background: #0E13A8;
+		width: 15px;
+		height: 15px;
+		color: #fff;
+		border-radius: 100%;
+		display: inline;
+		font-size: 10px;
+		text-align: center;
+	}
+}

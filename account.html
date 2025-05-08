@@ -23,16 +23,6 @@
 </head>
 <body>
 
-     <!-- preloader start here -->
-     <div class="preloader">
-          <div class="preloader-inner">
-               <div class="preloader-icon">
-                    <span></span>
-                    <span></span>
-               </div>
-          </div>
-     </div>
-     <!-- preloader ending here -->
 
      <!-- mobile menu -->
      <div class="mobile_menu">
@@ -43,6 +33,12 @@
                     </div>
                </div>
                <div class="mobile_menu_top_right">
+                    <div class="cart_icon">
+                         <a href="cart.html">
+                              <i class="fa-solid fa-cart-shopping"></i>
+                              <span>0</span>
+                         </a>
+                    </div>
                     <span>
                          <i class="fa-solid fa-xmark"></i>
                          <i class="fa-solid fa-bars-staggered"></i>
@@ -53,21 +49,21 @@
                <div class="main_mobile_menu">
                     <ul>
                          <li>
-                              <a class="mb_active" href="#0">HOME</a> 
+                              <a href="index.html">HOME</a> 
                          </li> 
                          <li>
-                              <a class="mb_active" href="#0">Take Exam</a>
+                              <a href="#0">Take Exam</a>
                               <ul>
-                                  <li><a class="mb_active" href="index.html">IRS AFSP Program Exam</a></li>
-                                  <li><a href="index-2.html">IRS AFSP Program Exam + Classes</a></li>  
+                                  <li><a href="course-details.html">IRS AFSP Program Exam</a></li>
+                                  <li><a href="course-details.html">IRS AFSP Program Exam + Classes</a></li>  
                               </ul> 
                          </li> 
-                         <li><a href="#">Account</a></li>
-                         <li><a href="#">CONTACT</a></li> 
+                         <li><a href="account.html">Account</a></li>
+                         <li><a href="contact.html">CONTACT</a></li> 
                     </ul> 
                </div> 
                <div class="mobile_menu_btn">
-                    <a href="#">Login/Register</a>
+                    <a href="authentication.html">Login/Register</a>
                </div>
           </div>
      </div>
@@ -83,7 +79,7 @@
                     </div> 
                     <nav class="primary_menu">
                          <ul class="d-flex justify-content-between align-items-center">
-                              <li class="active">
+                              <li>
                                    <a href="index.html">HOME</a>
                               </li>  
                               <li>
@@ -95,7 +91,7 @@
                                         </ul>
                                    </div>
                               </li> 
-                              <li><a href="account.html">Account</a></li> 
+                              <li><a class="active_menu" href="account.html">Account</a></li> 
                               <li> <a href="contact.html">CONTACT</a> </li>
                          </ul> 
                          <div class="header_btn">
@@ -111,7 +107,7 @@
                                    </div>
                                    <input type="text" placeholder="Search...">
                               </div>
-                              <a class="login_reg_btn" href="#"><i class="fa-solid fa-user"></i> Login/Register</a>
+                              <a class="login_reg_btn" href="authentication.html"><i class="fa-solid fa-user"></i> Login/Register</a>
                          </div>
                     </nav>   
                    

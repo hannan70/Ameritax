@@ -15,7 +15,7 @@
         justify-content: space-between;
         align-items: center;
         background: #FCFCFC;
-        padding: 10px 40px;
+        padding: 10px 36px 10px 10px;
         .mobile_menu_top_left {
             .mobile_logo img {
                 width: 130px;
@@ -23,6 +23,8 @@
             }
         }
         .mobile_menu_top_right {
+            display: flex;
+            align-items: center;
             span {
                 i {
                     font-size: 30px;

@@ -214,6 +214,27 @@ span.select2-selection {
   background-color: #062E92;
 }
 
+.cart_icon {
+  position: relative;
+  margin: 0px 25px 0px;
+}
+.cart_icon a {
+  color: #555;
+}
+.cart_icon span {
+  position: absolute;
+  top: -9px;
+  left: 7px;
+  background: #0E13A8;
+  width: 15px;
+  height: 15px;
+  color: #fff;
+  border-radius: 100%;
+  display: inline;
+  font-size: 10px;
+  text-align: center;
+}
+
 .header_section {
   background-color: #FCFCFC;
   padding: 0px;
@@ -275,6 +296,9 @@ span.select2-selection {
 .header_section .header_inner .primary_menu ul li:not(.sub_menu li) a i.fa-solid.fa-chevron-down {
   padding-left: 5px;
 }
+.header_section .header_inner .primary_menu ul li:not(.sub_menu li) a.active_menu {
+  color: #0E13A8;
+}
 .header_section .header_inner .primary_menu ul li:not(.sub_menu li):hover::after {
   transform: translateY(28px);
   opacity: 1;
@@ -321,26 +345,6 @@ span.select2-selection {
 .header_section .header_inner .header_btn {
   display: flex;
   align-items: center;
-}
-.header_section .header_inner .header_btn .cart_icon {
-  position: relative;
-  margin: 0px 25px 0px;
-}
-.header_section .header_inner .header_btn .cart_icon a {
-  color: #555;
-}
-.header_section .header_inner .header_btn .cart_icon span {
-  position: absolute;
-  top: -9px;
-  left: 7px;
-  background: #0E13A8;
-  width: 15px;
-  height: 15px;
-  color: #fff;
-  border-radius: 100%;
-  display: inline;
-  font-size: 10px;
-  text-align: center;
 }
 .header_section .header_inner .header_btn .search-btn {
   position: relative;
@@ -404,11 +408,15 @@ span.select2-selection {
   justify-content: space-between;
   align-items: center;
   background: #FCFCFC;
-  padding: 10px 40px;
+  padding: 10px 36px 10px 10px;
 }
 .mobile_menu .mobile_menu_top .mobile_menu_top_left .mobile_logo img {
   width: 130px;
   height: auto;
+}
+.mobile_menu .mobile_menu_top .mobile_menu_top_right {
+  display: flex;
+  align-items: center;
 }
 .mobile_menu .mobile_menu_top .mobile_menu_top_right span i {
   font-size: 30px;
@@ -871,6 +879,30 @@ span.select2-selection {
 }
 .contact_section .contact_area .contact_inner .contact_form {
   margin-top: 50px;
+}
+
+.authentication {
+  margin: 80px 0px 100px;
+}
+.authentication .authentication_area .auth_area {
+  border: 1px solid #ddd;
+  padding: 25px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+.authentication .authentication_area .auth_area .checkbox_input {
+  margin: 14px 0px;
+}
+.authentication .authentication_area .auth_area .forget_pass a {
+  margin-top: 14px;
+  color: #3478F6;
+  font-weight: 500;
+  display: inline-block;
+}
+.authentication .authentication_area .auth_area .auth_para p {
+  color: #333;
+  font-size: 15px;
+  margin: 10px 0px 20px;
 }
 
 .course_details {
@@ -1444,6 +1476,11 @@ span.select2-selection {
   padding: 7px 12px;
   border-radius: 10px;
 }
+@media (max-width: 575px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .search_box .search_box_title .search_box_right {
+    display: none;
+  }
+}
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .purchase_course .purchase_inner .search_box .form_group label {
   width: 100%;
   color: #333;
@@ -1714,6 +1751,11 @@ span.select2-selection {
   text-align: center;
   margin-top: 20px;
 }
+@media (max-width: 575px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner {
+    overflow-x: scroll;
+  }
+}
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner h3 {
   font-size: 36px;
   font-weight: 700;
@@ -1721,6 +1763,11 @@ span.select2-selection {
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner p {
   color: #555;
+}
+@media (max-width: 575px) {
+  .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner .db_user_registration_list {
+    width: 500px;
+  }
 }
 .account_section .account_inner .my_account_menu_tab .myaccount_content .my_acconut_tabcontent .user_dashboard .user_dashboard_content .db_user_registration .db_user_registeration_inner .db_user_registration_list .db_user_registration_list_item {
   display: flex;

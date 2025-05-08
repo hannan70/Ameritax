@@ -321,7 +321,36 @@
         }
     }
 }
-
+// login and regeistration css
+.authentication {
+    margin: 80px 0px 100px;
+    .authentication_area {
+        .auth_area {
+            border: 1px solid #ddd;
+            padding: 25px;
+            border-radius: 5px;
+            margin-top: 20px;
+            .checkbox_input {
+                margin: 14px 0px;
+            }
+            .forget_pass {
+                a {
+                    margin-top: 14px;
+                    color: $hover-color;
+                    font-weight: 500;
+                    display: inline-block;
+                }
+            }
+            .auth_para {
+                p {
+                    color: #333;
+                    font-size: 15px;
+                    margin: 10px 0px 20px;
+                }
+            }
+        }
+    }
+}
  
 
  
