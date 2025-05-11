@@ -156,6 +156,43 @@ Version      : 1.0
 		$(".author_action_list").toggleClass("author_action") 
 	})
 
+
+
+	// =============== Multi step form ==============
+	 
+  $(document).ready(function () {
+    let currentStep = 0;
+    const steps = $(".step");
+
+    function showStep(index) {
+      steps.hide().eq(index).show();
+    }
+
+    $(".next-btn").click(function () {
+      if (currentStep < steps.length - 1) {
+        currentStep++;
+        showStep(currentStep);
+      }
+    });
+
+    $(".prev-btn").click(function () {
+      if (currentStep > 0) {
+        currentStep--;
+        showStep(currentStep);
+      }
+    });
+
+    $("#multi-step-form").submit(function (e) {
+      e.preventDefault();
+      alert("Form submitted!");
+    });
+
+    showStep(currentStep); // Initialize
+}); 
+
+
+
+
 })(jQuery);
 
 

@@ -100,7 +100,9 @@
         .quiz_dashboard_sidebar {
             position: relative;
             border-right: 1px solid #ddd;
-            height: 100vh;
+            &.custom_border_height {
+                height: 100vh;
+            }
             .quiz_sidebar_right_arrow {
                 width: 60px;
                 height: 30px;
@@ -182,7 +184,7 @@
                 width: 100%;
             }
             .quiz_dashboard_main_content {
-                margin-top: 50px;
+                margin: 50px 0px;
                 .quiz_title {
                     font-size: 36px;
                     font-weight: 700;
@@ -199,6 +201,97 @@
                     margin: 20px 0px;
                 }
                 .quiz_para {} 
+                .logout_btn {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 285px;
+                    align-items: center;
+                    padding: 0;
+                    margin-bottom: 20px;
+                    padding-right: 20px;
+                    color: #fff;
+                    cursor: pointer;
+                    a {
+                        width: 100%;
+                    }
+                }
+                .quiz_loding {
+                    margin-top: 20px;
+                    p {
+                        background-color: #FFCDD2;
+                        padding: 15px 20px;
+                        border-radius: 5px;
+                        font-weight: 600;
+                    }
+                }
+                .time_alert_box {
+                    background-color: #F0F3F6;
+                    padding: 15px 20px;
+                    border-radius: 5px;
+                    p {
+                        margin-bottom: 5px;
+                    }
+                    .progress {
+                        height: 7px;  
+                        .progress-bar {
+                            background-color: $theme-color;
+                        }
+                    }
+                }
+                .quiz_question_box {
+                    .num_of_question {
+                        margin: 50px 0px 15px;
+                    }
+                    .step {
+                        .question_list_box {
+                            .question_number {
+                                border-bottom: 1px solid #ddd;
+                                padding-bottom: 6px;
+                            }
+                            .question_name {
+                                padding: 15px 0px 30px;
+                            }
+                            .question_list {
+                                .question_form_item {
+                                    display: flex;
+                                    align-items: center;
+                                    background-color: #F0F3F6;
+                                    padding: 10px;
+                                    margin-bottom: 15px;
+                                    border-radius: 7px;
+                                    
+                                    .option_name {
+                                        cursor: pointer;
+                                        margin-left: 10px;
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                            .quiz_btn_group {
+                                text-align: end;
+                                margin: 20px 0px;
+                                .prev-btn, .next-btn {
+                                    background-color: $theme-color;
+                                    color: #fff;
+                                    border: none;
+                                    padding: 10px 25px;
+                                    font-weight: 500;
+                                    border-radius: 30px;
+                                    @include transition($transition);
+                                    &:hover {
+                                        background-color: #000;
+                                    }
+                                }
+                                .next-btn {
+                                    margin-left: 10px;
+                                }
+                                .prev-btn {
+
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
