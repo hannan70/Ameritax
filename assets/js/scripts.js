@@ -140,6 +140,22 @@ Version      : 1.0
 	});
 	
 
+	//  quiz dashboard
+	$(".quiz_toggle").on("click", function(){
+		$(".quiz_sidebar_inner").addClass("close_sidebar")
+		$(".quiz_dashboard_main").addClass("full_with")
+		$(".quiz_sidebar_right_arrow").addClass("right_arrow") 
+	})
+
+	$(".quiz_sidebar_right_arrow").on("click", function(){
+		$(".quiz_sidebar_inner").removeClass("close_sidebar")
+		$(".quiz_dashboard_main").removeClass("full_with")
+		$(".quiz_sidebar_right_arrow").removeClass("right_arrow")
+	})
+	$(".author_action").on("click", function(){ 
+		$(".author_action_list").toggleClass("author_action") 
+	})
+
 })(jQuery);
 
 
