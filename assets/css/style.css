@@ -2281,11 +2281,22 @@ span.select2-selection {
   justify-content: end;
   padding: 10px 20px 0px;
 }
+@media (max-width: 575px) {
+  .quiz_header_section .quiz_header_section_area .quiz_header_right .quiz_right_inner {
+    padding: 10px 20px 0px 0px;
+  }
+}
 .quiz_header_section .quiz_header_section_area .quiz_header_right .quiz_right_inner .author_name {
   font-weight: 500;
   color: #94836C;
   font-size: 15px;
   margin-right: 10px;
+}
+@media (max-width: 575px) {
+  .quiz_header_section .quiz_header_section_area .quiz_header_right .quiz_right_inner .author_name {
+    font-size: 12px;
+    margin-right: 7px;
+  }
 }
 .quiz_header_section .quiz_header_section_area .quiz_header_right .quiz_right_inner .author_action {
   position: relative;
@@ -2338,12 +2349,35 @@ span.select2-selection {
 .quiz_dashboard_body .quiz_dashboard_body_inner {
   display: flex;
 }
+@media (max-width: 991px) {
+  .quiz_dashboard_body .quiz_dashboard_body_inner {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+  }
+}
 .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_sidebar {
   position: relative;
   border-right: 1px solid #ddd;
 }
 .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_sidebar.custom_border_height {
   height: 100vh;
+}
+@media (max-width: 991px) {
+  .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_sidebar.custom_border_height {
+    height: 100%;
+  }
+}
+@media (max-width: 991px) {
+  .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_sidebar {
+    border-left: 1px solid #ddd;
+    width: calc(100% - 200px);
+  }
+}
+@media (max-width: 575px) {
+  .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_sidebar {
+    width: calc(100% - 20px);
+  }
 }
 .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_sidebar .quiz_sidebar_right_arrow {
   width: 60px;
@@ -2377,6 +2411,11 @@ span.select2-selection {
   transform: translateX(-500px);
   width: 0;
 }
+@media (max-width: 991px) {
+  .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_sidebar .quiz_sidebar_inner {
+    width: 100%;
+  }
+}
 .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_sidebar .quiz_sidebar_inner .quiz_sidebar_title {
   background-color: #DD3333;
   display: flex;
@@ -2404,6 +2443,11 @@ span.select2-selection {
   padding: 10px;
   border-radius: 30px;
 }
+@media (max-width: 991px) {
+  .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_sidebar .quiz_sidebar_inner .quiz_sidebar_title .quiz_toggle {
+    display: none;
+  }
+}
 .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_sidebar .quiz_sidebar_inner .quiz_sidebar_list ul li {
   padding: 10px;
   border-bottom: 1px solid #ddd;
@@ -2427,12 +2471,28 @@ span.select2-selection {
 .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_main.full_with {
   width: 100%;
 }
+@media (max-width: 991px) {
+  .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_main {
+    width: calc(100% - 200px);
+  }
+}
+@media (max-width: 575px) {
+  .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_main {
+    width: calc(100% - 20px);
+  }
+}
 .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_main .quiz_dashboard_main_content {
   margin: 50px 0px;
 }
 .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_main .quiz_dashboard_main_content .quiz_title {
   font-size: 36px;
   font-weight: 700;
+}
+@media (max-width: 575px) {
+  .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_main .quiz_dashboard_main_content .quiz_title {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
 }
 .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_main .quiz_dashboard_main_content .quiz_sub_title {
   background-color: #F0F3F6;
@@ -2535,6 +2595,11 @@ span.select2-selection {
   font-size: 36px;
   border-bottom: 1px solid #ddd;
   padding-bottom: 20px;
+}
+@media (max-width: 575px) {
+  .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_main .quiz_dashboard_main_content .result_section h2 {
+    font-size: 25px;
+  }
 }
 .quiz_dashboard_body .quiz_dashboard_body_inner .quiz_dashboard_main .quiz_dashboard_main_content .result_section .result_alert_box {
   background-color: #E0F5FE;
